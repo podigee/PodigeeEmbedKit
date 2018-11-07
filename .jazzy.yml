@@ -1,0 +1,8 @@
+author: Podigee
+author_url: https://twitter.com/podigee
+github_url: https://github.com/podigee/PodigeeEmbedKit
+root_url: https://podigee.github.io/PodigeeEmbedKit/
+module: PodigeeEmbedKit
+output: docs
+theme: fullwidth
+xcodebuild_arguments: [-workspace, 'PodigeeEmbedKit.xcworkspace', -scheme, 'PodigeeEmbedKit-iOS']

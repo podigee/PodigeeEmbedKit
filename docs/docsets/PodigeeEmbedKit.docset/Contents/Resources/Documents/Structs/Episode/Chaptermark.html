@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Playlist Structure Reference</title>
+    <title>Chaptermark Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Struct/Playlist" class="dashAnchor"></a>
-    <a title="Playlist Structure Reference"></a>
+    <a name="//apple_ref/swift/Struct/Chaptermark" class="dashAnchor"></a>
+    <a title="Chaptermark Structure Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html">PodigeeEmbedKit Docs</a> (40% documented)</p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../../index.html">PodigeeEmbedKit Reference</a>
         <img id="carat" src="../../img/carat.png" />
-        Playlist Structure Reference
+        Chaptermark Structure Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -98,10 +98,10 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>Playlist</h1>
+            <h1>Chaptermark</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Playlist</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Chaptermark</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
 
                 </div>
               </div>
@@ -114,9 +114,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15PodigeeEmbedKit10ExtensionsV8PlaylistV8disabledSbvp"></a>
-                    <a name="//apple_ref/swift/Property/disabled" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PodigeeEmbedKit10ExtensionsV8PlaylistV8disabledSbvp">disabled</a>
+                    <a name="/s:15PodigeeEmbedKit7EpisodeV11ChaptermarkV5titleSSvp"></a>
+                    <a name="//apple_ref/swift/Property/title" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PodigeeEmbedKit7EpisodeV11ChaptermarkV5titleSSvp">title</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -124,14 +124,45 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The chapter mark title</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">disabled</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15PodigeeEmbedKit7EpisodeV11ChaptermarkV5startSSvp"></a>
+                    <a name="//apple_ref/swift/Property/start" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PodigeeEmbedKit7EpisodeV11ChaptermarkV5startSSvp">start</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The chapter mark start time related to playback time.</p>
+
+<p>Format: <code>hh:mm:ss.sss</code></p>
+
+<p>Example: <code>00:21:21.521</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">start</span><span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>

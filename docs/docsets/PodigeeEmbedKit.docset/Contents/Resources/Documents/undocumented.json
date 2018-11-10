@@ -251,6 +251,13 @@
       "symbol": "Extensions.ChapterMarks.disabled",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/PodigeeEmbedKit.swift",
+      "line": 49,
+      "symbol": "PodigeeEmbedKit.playlistForPodcastWith(domain:complete:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
     }
   ],
   "source_directory": "/Users/stefan/Projects/PodigeeEmbedKit"

@@ -14,7 +14,7 @@
     <a title="PodigeeEmbedKit Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">PodigeeEmbedKit Docs</a> (0% documented)</p>
+        <p><a href="../index.html">PodigeeEmbedKit Docs</a> (40% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -42,37 +42,34 @@
                 <a href="../Structs/Episode.html">Episode</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/Episode/Media.html">– Media</a>
+                <a href="../Structs/Episode/Chaptermark.html">– Chaptermark</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/Episode/Chaptermarks.html">– Chaptermarks</a>
+                <a href="../Structs/Episode/Media.html">– Media</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Extensions.html">Extensions</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/Extensions/ChapterMarks.html">– ChapterMarks</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/Extensions/Download.html">– Download</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/Extensions/EpisodeInfo.html">– EpisodeInfo</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/Extensions/Playlist.html">– Playlist</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/Extensions/Share.html">– Share</a>
+                <a href="../Structs/Extensions/SubscribeBar.html">– SubscribeBar</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Extensions/Transcript.html">– Transcript</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/Extensions/SubscribeBar.html">– SubscribeBar</a>
+                <a href="../Structs/Extensions/Share.html">– Share</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/Options.html">Options</a>
+                <a href="../Structs/Extensions/Playlist.html">– Playlist</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Extensions/EpisodeInfo.html">– EpisodeInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Extensions/Download.html">– Download</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Extensions/ChapterMarks.html">– ChapterMarks</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs.html#/s:15PodigeeEmbedKit8PlaylistV">Playlist</a>
@@ -108,7 +105,7 @@
 
                 </div>
               </div>
-            <p>Undocumented</p>
+            <p>Contains API calls to request podcast and episode embed information from Podigee.</p>
 
           </section>
           <section class="section task-group-section">
@@ -127,7 +124,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Request embed data information for a podcast. This contains information about the podcast and data for the most recent published episode.</p>
 
                       </div>
                       <div class="declaration">
@@ -137,6 +134,41 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">embedDataForPodcastWith</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">complete</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">embed</span><span class="p">:</span> <span class="kt"><a href="../Structs/PodcastEmbed.html">PodcastEmbed</a></span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>domain</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The domain of the podcast, e.g. <code>bananaland.podigee.io</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>complete</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure called when the network request is finished.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Void</p>
                       </div>
                     </section>
                   </div>
@@ -154,7 +186,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Request the episode playlist for a podcast. This returns an array of episodes.</p>
 
                       </div>
                       <div class="declaration">
@@ -164,6 +196,41 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">playlistForPodcastWith</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">complete</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">episodes</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:15PodigeeEmbedKit8Episodesa">Episodes</a></span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>domain</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The domain of the podcast, e.g. <code>bananaland.podigee.io</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>complete</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure called when the network request is finished. If successfull you receive an array of episodes.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Void</p>
                       </div>
                     </section>
                   </div>

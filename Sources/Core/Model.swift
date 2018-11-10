@@ -13,10 +13,12 @@ public struct Playlist: Codable {
 }
 
 public struct PodcastEmbed: Codable {
+    /// The most recent episode of this podcast
     public let episode: Episode
+    /// Podcast related information
     public let podcast: Podcast
+    /// Embed extensions. Contains information if they are enabled or disabled
     public let extensions: Extensions
-    public let options: Options
 }
 
 public typealias Episodes = [Episode]
@@ -82,34 +84,14 @@ public struct Podcast: Codable {
 
 
 public struct Extensions: Codable {
-    public struct ChapterMarks: Codable {
-        public let disabled: Bool
-    }
     public let chapterMarks: ChapterMarks
-    public struct Download: Codable {
-        public let disabled: Bool
-    }
     public let download: Download
-    public struct EpisodeInfo: Codable {
-        public let disabled: Bool
-    }
     public let episodeInfo: EpisodeInfo
-    public struct Playlist: Codable {
-        public let disabled: Bool
-    }
     public let playlist: Playlist
-    public struct Share: Codable {
-        public let disabled: Bool
-    }
     public let share: Share
-    public struct Transcript: Codable {
-        public let disabled: Bool
-    }
     public let transcript: Transcript
-    public struct SubscribeBar: Codable {
-        public let disabled: Bool
-    }
     public let subscribeBar: SubscribeBar
+    
     private enum CodingKeys: String, CodingKey {
         case chapterMarks = "ChapterMarks"
         case download = "Download"
@@ -119,8 +101,26 @@ public struct Extensions: Codable {
         case transcript = "Transcript"
         case subscribeBar = "SubscribeBar"
     }
-}
-
-public struct Options: Codable {
-    public let theme: String
+    
+    public struct SubscribeBar: Codable {
+        public let disabled: Bool
+    }
+    public struct Transcript: Codable {
+        public let disabled: Bool
+    }
+    public struct Share: Codable {
+        public let disabled: Bool
+    }
+    public struct Playlist: Codable {
+        public let disabled: Bool
+    }
+    public struct EpisodeInfo: Codable {
+        public let disabled: Bool
+    }
+    public struct Download: Codable {
+        public let disabled: Bool
+    }
+    public struct ChapterMarks: Codable {
+        public let disabled: Bool
+    }
 }

@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Contains API calls to request podcast and episode embed information from Podigee.
 public class PodigeeEmbedKit {
     
     private static var jsonDecoder: JSONDecoder {
@@ -16,6 +17,12 @@ public class PodigeeEmbedKit {
         return decoder
     }
     
+    /**
+     Request embed data information for a podcast. This contains information about the podcast and data for the most recent published episode.
+     - Parameter domain: The domain of the podcast, e.g. `bananaland.podigee.io`.
+     - Parameter complete: The closure called when the network request is finished.
+     - returns: Void
+    */
     public static func embedDataForPodcastWith(domain: String, complete: @escaping (_ embed: PodcastEmbed?, _ error: Error?) -> Void) {
         var components = URLComponents()
         components.host = domain
@@ -39,6 +46,12 @@ public class PodigeeEmbedKit {
         }.resume()
     }
     
+    /**
+     Request the episode playlist for a podcast. This returns an array of episodes.
+     - Parameter domain: The domain of the podcast, e.g. `bananaland.podigee.io`.
+     - Parameter complete: The closure called when the network request is finished. If successfull you receive an array of episodes.
+     - returns: Void
+     */
     public static func playlistForPodcastWith(domain: String, complete: @escaping (_ episodes: Episodes?, _ error: Error?) -> Void) {
         var components = URLComponents()
         components.host = domain

@@ -21,19 +21,34 @@ public struct PodcastEmbed: Codable {
 
 public typealias Episodes = [Episode]
 public struct Episode: Codable {
+    /// All media related to this episode. Contains URLs to different audio formats
     public let media: Media
+    /// URL for the coverart image
     public let coverUrl: URL
+    /// The episode title
     public let title: String
+    /// The episode subtitle
     public let subtitle: String
+    /// The episode description
     public let description: String
+    /// All chaptermarks for this episode
     public let chaptermarks: [Chaptermark]
+    /// The URL to the episode on the web
     public let url: URL
     public let transcript: URL
+    /// The episode number
     public let number: Int
+    /// The duration of the episode in seconds
     public let duration: Int
     
     public struct Chaptermark: Codable {
+        /// The chapter mark title
         public let title: String
+        /// The chapter mark start time related to playback time.
+        ///
+        /// Format: `hh:mm:ss.sss`
+        ///
+        /// Example: `00:21:21.521`
         public let start: String
     }
     
@@ -46,12 +61,17 @@ public struct Episode: Codable {
 }
 
 public struct Podcast: Codable {
+    /// The URL to the podcast rss feed
     public let feed: URL
+    /// The podcast title
     public let title: String
+    /// The podcast subtitle
     public let subtitle: String
-    public let episodes: URL
+    /// The URL to the podcast website
     public let url: URL
+    /// URLs for services this podcast is available on, e.g. iTunes or Spotify
     public let connections: Connections
+    /// The podcast language in language code format, e.g. `en`
     public let language: String
     
     public struct Connections: Codable {

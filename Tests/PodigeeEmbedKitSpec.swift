@@ -14,11 +14,7 @@ class PodigeeEmbedKitSpec: QuickSpec {
 
     override func spec() {
 
-        describe("PodigeeEmbedKitSpec") {
-            it("works") {
-                expect(PodigeeEmbedKit.name) == "PodigeeEmbedKit"
-            }
-        }
+        
 
     }
 

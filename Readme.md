@@ -8,7 +8,6 @@
 [![CocoaPods compatible](https://img.shields.io/cocoapods/v/PodigeeEmbedKit.svg)](https://cocoapods.org/pods/PodigeeEmbedKit)
 
 [![Travis](https://img.shields.io/travis/podigee/PodigeeEmbedKit/master.svg)](https://travis-ci.org/podigee/PodigeeEmbedKit/branches)
-[![SwiftFrameworkTemplate](https://img.shields.io/badge/SwiftFramework-Template-red.svg)](http://github.com/RahulKatariya/SwiftFrameworkTemplate)
 
 iOS Framework to embed podcast episodes hosted on Podigee
 

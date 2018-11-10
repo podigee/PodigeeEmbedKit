@@ -59,7 +59,7 @@ public class PodigeeEmbedKit {
                 return
             }
             complete(embed, nil)
-            }.resume()
+        }.resume()
     }
     
     

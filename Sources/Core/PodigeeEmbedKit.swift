@@ -11,6 +11,10 @@ import Foundation
 /// Contains API calls to request podcast and episode embed information from Podigee.
 public class PodigeeEmbedKit {
     
+    public enum PodigeeError: Error {
+        case invalidPodcastDomain
+    }
+    
     private static var jsonDecoder: JSONDecoder {
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .iso8601
@@ -31,7 +35,7 @@ public class PodigeeEmbedKit {
         components.scheme = "https"
         
         guard let url = components.url else {
-            #warning("return invalid domaint error")
+            complete(nil, PodigeeError.invalidPodcastDomain)
             return
         }
         var request = URLRequest(url: url)
@@ -60,7 +64,7 @@ public class PodigeeEmbedKit {
         components.scheme = "https"
         
         guard let url = components.url else {
-            #warning("return invalid domaint error")
+            complete(nil, PodigeeError.invalidPodcastDomain)
             return
         }
         var request = URLRequest(url: url)

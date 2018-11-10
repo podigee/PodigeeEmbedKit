@@ -21,26 +21,28 @@ public struct PodcastEmbed: Codable {
 
 public typealias Episodes = [Episode]
 public struct Episode: Codable {
+    public let media: Media
+    public let coverUrl: URL
+    public let title: String
+    public let subtitle: String
+    public let description: String
+    public let chaptermarks: [Chaptermark]
+    public let url: URL
+    public let transcript: URL
+    public let number: Int
+    public let duration: Int
+    
+    public struct Chaptermark: Codable {
+        public let title: String
+        public let start: String
+    }
+    
     public struct Media: Codable {
         public let mp3: URL
         public let aac: URL
         public let vorbis: URL
         public let opus: URL
     }
-    public let media: Media
-    public let coverUrl: URL
-    public let title: String
-    public let subtitle: String
-    public let description: String
-    public struct Chaptermarks: Codable {
-        public let title: String
-        public let start: String
-    }
-    public let chaptermarks: [Chaptermarks]
-    public let url: URL
-    public let transcript: URL
-    public let number: Int
-    public let duration: Int
 }
 
 public struct Podcast: Codable {
@@ -49,12 +51,13 @@ public struct Podcast: Codable {
     public let subtitle: String
     public let episodes: URL
     public let url: URL
+    public let connections: Connections
+    public let language: String
+    
     public struct Connections: Codable {
         public let itunes: URL
         public let spotify: URL
     }
-    public let connections: Connections
-    public let language: String
 }
 
 

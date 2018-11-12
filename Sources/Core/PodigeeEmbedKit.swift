@@ -30,7 +30,7 @@ public class PodigeeEmbedKit {
     public static func embedDataForPodcastWith(domain: String, complete: @escaping (_ embed: PodcastEmbed?, _ error: Error?) -> Void) {
         var components = URLComponents()
         components.host = domain
-        components.path = "embed"
+        components.path = "/embed"
         components.queryItems = [URLQueryItem(name: "context", value: "external")]
         components.scheme = "https"
         
@@ -59,7 +59,7 @@ public class PodigeeEmbedKit {
     public static func playlistForPodcastWith(domain: String, complete: @escaping (_ episodes: Episodes?, _ error: Error?) -> Void) {
         var components = URLComponents()
         components.host = domain
-        components.path = "embed/playlist"
+        components.path = "/embed/playlist"
         components.queryItems = [URLQueryItem(name: "context", value: "external")]
         components.scheme = "https"
         

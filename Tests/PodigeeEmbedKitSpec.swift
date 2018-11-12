@@ -13,8 +13,15 @@ import Nimble
 class PodigeeEmbedKitSpec: QuickSpec {
 
     override func spec() {
-
-        
+        describe("embed data") {
+            it("returns the correct podcast title") {
+                var podcastTitle: String?
+                PodigeeEmbedKit.embedDataForPodcastWith(domain: "bananaland.podigee.io") { (podcastEmbed, error) in
+                    podcastTitle = podcastEmbed?.podcast.title
+                }
+                expect(podcastTitle).toEventually(equal("Bananaland"))
+            }
+        }
 
     }
 

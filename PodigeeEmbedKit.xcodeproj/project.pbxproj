@@ -34,6 +34,9 @@
 		35B742381F82A62900829B21 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B742341F82A61D00829B21 /* Nimble.framework */; };
 		35B742391F82A62900829B21 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B742351F82A61E00829B21 /* Quick.framework */; };
 		F84A97BE2196E2ED00186BC2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84A97BD2196E2ED00186BC2 /* Model.swift */; };
+		F84F43E52199994C00C6C833 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84A97BD2196E2ED00186BC2 /* Model.swift */; };
+		F84F43E62199994D00C6C833 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84A97BD2196E2ED00186BC2 /* Model.swift */; };
+		F84F43E72199994E00C6C833 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84A97BD2196E2ED00186BC2 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -572,6 +575,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				359649061FB18CC000FC7ADC /* PodigeeEmbedKit.swift in Sources */,
+				F84F43E72199994E00C6C833 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +584,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				359649041FB18CC000FC7ADC /* PodigeeEmbedKit.swift in Sources */,
+				F84F43E52199994C00C6C833 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +593,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				359649051FB18CC000FC7ADC /* PodigeeEmbedKit.swift in Sources */,
+				F84F43E62199994D00C6C833 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

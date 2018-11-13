@@ -42,11 +42,16 @@ public class PodigeeEmbedKit {
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
         URLSession.shared.dataTask(with: request) { (data, response, error) in
-            guard let data = data, let embed = try? jsonDecoder.decode(PodcastEmbed.self, from: data) else {
+            guard let data = data else {
                 complete(nil, error)
                 return
             }
-            complete(embed, nil)
+            do {
+                let embed = try jsonDecoder.decode(PodcastEmbed.self, from: data)
+                complete(embed, nil)
+            } catch {
+                complete(nil, error)
+            }
         }.resume()
     }
     
@@ -71,11 +76,16 @@ public class PodigeeEmbedKit {
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
         URLSession.shared.dataTask(with: request) { (data, response, error) in
-            guard let data = data, let embed = try? jsonDecoder.decode(Episodes.self, from: data) else {
+            guard let data = data else {
                 complete(nil, error)
                 return
             }
-            complete(embed, nil)
+            do {
+                let embed = try jsonDecoder.decode(Episodes.self, from: data)
+                complete(embed, nil)
+            } catch {
+                complete(nil, error)
+            }
         }.resume()
     }
     

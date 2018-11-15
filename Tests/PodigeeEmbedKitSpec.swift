@@ -19,7 +19,7 @@ class PodigeeEmbedKitSpec: QuickSpec {
                 PodigeeEmbedKit.embedDataForPodcastWith(domain: "bananaland.podigee.io") { (podcastEmbed, error) in
                     podcastTitle = podcastEmbed?.podcast.title
                 }
-                expect(podcastTitle).toEventually(equal("Bananaland"))
+                expect(podcastTitle).toEventually(equal("Banana Land"))
             }
         }
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Playlist Structure Reference</title>
+    <title>PlaylistSorting Enumeration Reference</title>
     <link rel="stylesheet" type="text/css" href="../../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Struct/Playlist" class="dashAnchor"></a>
-    <a title="Playlist Structure Reference"></a>
+    <a name="//apple_ref/swift/Enum/PlaylistSorting" class="dashAnchor"></a>
+    <a title="PlaylistSorting Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html">PodigeeEmbedKit Docs</a> (40% documented)</p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../../index.html">PodigeeEmbedKit Reference</a>
         <img id="carat" src="../../img/carat.png" />
-        Playlist Structure Reference
+        PlaylistSorting Enumeration Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -104,10 +104,10 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>Playlist</h1>
+            <h1>PlaylistSorting</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Playlist</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">PlaylistSorting</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
 
                 </div>
               </div>
@@ -120,9 +120,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15PodigeeEmbedKit10ExtensionsV8PlaylistV8disabledSbvp"></a>
-                    <a name="//apple_ref/swift/Property/disabled" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PodigeeEmbedKit10ExtensionsV8PlaylistV8disabledSbvp">disabled</a>
+                    <a name="/s:15PodigeeEmbedKitAAC15PlaylistSortingO11publishDateyA2DmF"></a>
+                    <a name="//apple_ref/swift/Element/publishDate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PodigeeEmbedKitAAC15PlaylistSortingO11publishDateyA2DmF">publishDate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -130,14 +130,41 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Sort episodes in playlist by publish date. Most recent first.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">disabled</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">publishDate</span> <span class="o">=</span> <span class="s">"default"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15PodigeeEmbedKitAAC15PlaylistSortingO13episodeNumberyA2DmF"></a>
+                    <a name="//apple_ref/swift/Element/episodeNumber" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PodigeeEmbedKitAAC15PlaylistSortingO13episodeNumberyA2DmF">episodeNumber</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sort episodes in playlist by episode number in ascending order.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">episodeNumber</span> <span class="o">=</span> <span class="s">"numeric"</span></code></pre>
 
                         </div>
                       </div>

@@ -33,6 +33,12 @@
               <li class="nav-group-task">
                 <a href="../Classes/PodigeeEmbedKit.html">PodigeeEmbedKit</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PodigeeEmbedKit/PodigeeError.html">– PodigeeError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PodigeeEmbedKit/PlaylistSorting.html">– PlaylistSorting</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -114,6 +120,62 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:15PodigeeEmbedKitAAC0A5ErrorO"></a>
+                    <a name="//apple_ref/swift/Enum/PodigeeError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PodigeeEmbedKitAAC0A5ErrorO">PodigeeError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Classes/PodigeeEmbedKit/PodigeeError.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">PodigeeError</span> <span class="p">:</span> <span class="kt">Error</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15PodigeeEmbedKitAAC15PlaylistSortingO"></a>
+                    <a name="//apple_ref/swift/Enum/PlaylistSorting" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PodigeeEmbedKitAAC15PlaylistSortingO">PlaylistSorting</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Classes/PodigeeEmbedKit/PlaylistSorting.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">PlaylistSorting</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:15PodigeeEmbedKitAAC23embedDataForPodcastWith6domain8completeySS_yAA0gB0VSg_s5Error_pSgtctFZ"></a>
                     <a name="//apple_ref/swift/Method/embedDataForPodcastWith(domain:complete:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:15PodigeeEmbedKitAAC23embedDataForPodcastWith6domain8completeySS_yAA0gB0VSg_s5Error_pSgtctFZ">embedDataForPodcastWith(domain:complete:)</a>
@@ -176,9 +238,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15PodigeeEmbedKitAAC22playlistForPodcastWith6domain8completeySS_ySayAA7EpisodeVGSg_s5Error_pSgtctFZ"></a>
-                    <a name="//apple_ref/swift/Method/playlistForPodcastWith(domain:complete:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PodigeeEmbedKitAAC22playlistForPodcastWith6domain8completeySS_ySayAA7EpisodeVGSg_s5Error_pSgtctFZ">playlistForPodcastWith(domain:complete:)</a>
+                    <a name="/s:15PodigeeEmbedKitAAC22playlistForPodcastWith6domain8pageSize6offset6sortBy8completeySS_S2iAB15PlaylistSortingOySayAA7EpisodeVGSg_s5Error_pSgtctFZ"></a>
+                    <a name="//apple_ref/swift/Method/playlistForPodcastWith(domain:pageSize:offset:sortBy:complete:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PodigeeEmbedKitAAC22playlistForPodcastWith6domain8pageSize6offset6sortBy8completeySS_S2iAB15PlaylistSortingOySayAA7EpisodeVGSg_s5Error_pSgtctFZ">playlistForPodcastWith(domain:pageSize:offset:sortBy:complete:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -193,7 +255,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">playlistForPodcastWith</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">complete</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">episodes</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:15PodigeeEmbedKit8Episodesa">Episodes</a></span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">playlistForPodcastWith</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">pageSize</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">sortBy</span><span class="p">:</span> <span class="kt"><a href="../Classes/PodigeeEmbedKit/PlaylistSorting.html">PlaylistSorting</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">publishDate</span><span class="p">,</span> <span class="nv">complete</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">episodes</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:15PodigeeEmbedKit8Episodesa">Episodes</a></span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -210,6 +272,42 @@
                               <td>
                                 <div>
                                   <p>The domain of the podcast, e.g. <code>bananaland.podigee.io</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pageSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Maximum number of episodes this request should return. Defaults to 10.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>offset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Offset for paging requests. Defaults to 0.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sortBy</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Set the sorting of the returned episode playlist. Defaults to sorting by publish date.</p>
                                 </div>
                               </td>
                             </tr>
@@ -240,7 +338,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="https://podigee.com" target="_blank" rel="external">Podigee</a>. All rights reserved. (Last updated: 2018-11-10)</p>
+          <p>&copy; 2018 <a class="link" href="https://podigee.com" target="_blank" rel="external">Podigee</a>. All rights reserved. (Last updated: 2018-11-15)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

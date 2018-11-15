@@ -1,0 +1,51 @@
+{
+  "episode": {},
+  "podcast": {
+    "feed": "https://podcast-news.podigee.io/feed/mp3",
+    "title": "Podigee Podcast News",
+    "subtitle": null,
+    "embedCode": "<script class=\"podigee-podcast-player\"\n src=\"https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js\"\n data-configuration=\"https://podcast-news.podigee.io/embed\"></script>",
+    "episodes": "https://podcast-news.podigee.io/embed/playlist?context=external",
+    "url": "https://podcast-news.podigee.io/",
+    "connections": {
+      "itunes": "https://itunes.apple.com/podcast/id1403134985",
+      "spotify": "https://open.spotify.com/show/2ZChoUyNqFitJKlsukcbEk?si=HsSsoAgeT0emvakB8nybbw"
+    },
+    "language": "de"
+  },
+  "extensions": {
+    "ChapterMarks": {
+      "disabled": false
+    },
+    "Download": {
+      "disabled": false
+    },
+    "EpisodeInfo": {
+      "disabled": false
+    },
+    "Playlist": {
+      "disabled": false
+    },
+    "Share": {
+      "disabled": false
+    },
+    "Transcript": {
+      "disabled": false
+    },
+    "SubscribeBar": {
+      "disabled": false
+    }
+  },
+  "options": {
+    "theme": "default",
+    "sslProxy": "https://cdn.podigee.com/ssl-proxy/",
+    "startPanel": null,
+    "customStyle": {
+      "primary": "#310f06",
+      "background": "rgb(246, 246, 246)",
+      "text": "#7a7a7a"
+    },
+    "themeCss": null,
+    "themeHtml": null
+  }
+}

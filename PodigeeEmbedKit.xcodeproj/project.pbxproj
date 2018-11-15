@@ -49,6 +49,9 @@
 		F8D6A776219D7E2D00535EE5 /* podcast_news_playlist.json in Resources */ = {isa = PBXBuildFile; fileRef = F8D6A775219D7E2D00535EE5 /* podcast_news_playlist.json */; };
 		F8D6A777219D7E2D00535EE5 /* podcast_news_playlist.json in Resources */ = {isa = PBXBuildFile; fileRef = F8D6A775219D7E2D00535EE5 /* podcast_news_playlist.json */; };
 		F8D6A778219D7E2D00535EE5 /* podcast_news_playlist.json in Resources */ = {isa = PBXBuildFile; fileRef = F8D6A775219D7E2D00535EE5 /* podcast_news_playlist.json */; };
+		F8D6A77A219DA66D00535EE5 /* podcast_news_embed.empty_episode.json in Resources */ = {isa = PBXBuildFile; fileRef = F8D6A779219DA66D00535EE5 /* podcast_news_embed.empty_episode.json */; };
+		F8D6A77B219DA66D00535EE5 /* podcast_news_embed.empty_episode.json in Resources */ = {isa = PBXBuildFile; fileRef = F8D6A779219DA66D00535EE5 /* podcast_news_embed.empty_episode.json */; };
+		F8D6A77C219DA66D00535EE5 /* podcast_news_embed.empty_episode.json in Resources */ = {isa = PBXBuildFile; fileRef = F8D6A779219DA66D00535EE5 /* podcast_news_embed.empty_episode.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +147,7 @@
 		F8D6A76E219D7B4400535EE5 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/Mac/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		F8D6A771219D7B6200535EE5 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/tvOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		F8D6A775219D7E2D00535EE5 /* podcast_news_playlist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = podcast_news_playlist.json; sourceTree = "<group>"; };
+		F8D6A779219DA66D00535EE5 /* podcast_news_embed.empty_episode.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = podcast_news_embed.empty_episode.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -303,6 +307,7 @@
 			children = (
 				F8D6A75C219D777800535EE5 /* podcast_news_embed.json */,
 				F8D6A775219D7E2D00535EE5 /* podcast_news_playlist.json */,
+				F8D6A779219DA66D00535EE5 /* podcast_news_embed.empty_episode.json */,
 			);
 			name = stubs;
 			sourceTree = "<group>";
@@ -577,6 +582,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8D6A77A219DA66D00535EE5 /* podcast_news_embed.empty_episode.json in Resources */,
 				F8D6A75D219D777800535EE5 /* podcast_news_embed.json in Resources */,
 				F8D6A776219D7E2D00535EE5 /* podcast_news_playlist.json in Resources */,
 			);
@@ -586,6 +592,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8D6A77C219DA66D00535EE5 /* podcast_news_embed.empty_episode.json in Resources */,
 				F8D6A75F219D777800535EE5 /* podcast_news_embed.json in Resources */,
 				F8D6A778219D7E2D00535EE5 /* podcast_news_playlist.json in Resources */,
 			);
@@ -595,6 +602,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8D6A77B219DA66D00535EE5 /* podcast_news_embed.empty_episode.json in Resources */,
 				F8D6A75E219D777800535EE5 /* podcast_news_embed.json in Resources */,
 				F8D6A777219D7E2D00535EE5 /* podcast_news_playlist.json in Resources */,
 			);

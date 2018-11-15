@@ -1,0 +1,85 @@
+{
+  "episode": {
+    "media": {
+      "mp3": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_6_return_of_the_chaos_monkey.mp3?v=1539951469&source=webplayer",
+      "aac": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_6_return_of_the_chaos_monkey.m4a?v=1539951470&source=webplayer",
+      "vorbis": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_6_return_of_the_chaos_monkey.ogg?v=1539951470&source=webplayer",
+      "opus": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_6_return_of_the_chaos_monkey.opus?v=1539951470&source=webplayer"
+    },
+    "coverUrl": "https://images.podigee.com/400x,sabagK4V_yGDanwc5brVBURwuLdbKAb5BQ1rx5zQcd9o=/https://cdn.podigee.com/uploads/u1/72b01048-d910-4809-8e97-3b25bb4561b1.png",
+    "title": "Return of the Chaos Monkey",
+    "subtitle": "Podigee Bewerbungsprozess, iTunes Probleme, Podcasthype",
+    "description": "<p><a href=\"https://www.podigee.com/de/blog/employee-number-one/\">Unser Ausschreiben für den/die erste/n Podigee-MitarbeiterIn</a></p>\n<p><a href=\"https://www.wuv.de/medien/wir_verstopfen_uns_den_markt_mit_produktionen_auf_kaffeeklatsch_niveau\">\"Wir verstopfen uns den Markt mit Produktionen auf Kaffeeklatsch-Niveau\"</a></p>\n<p><a href=\"https://www.facebook.com/gordon.schoenwaelder/posts/2329592543747495?__tn__=K-R\">Gordon Schönwälders Replik auf den W&amp;V Artikel</a></p>",
+    "chaptermarks": [
+      {
+        "title": "Intro",
+        "start": "00:00:28.751"
+      },
+      {
+        "title": "Der Hype um das Ende des Podcasthypes",
+        "start": "00:21:21.521"
+      },
+      {
+        "title": "Probleme mit iTunes",
+        "start": "00:13:05.042"
+      },
+      {
+        "title": "Podigee Bewerbungsprozess",
+        "start": "00:02:14.563"
+      }
+    ],
+    "url": "https://podcast-news.podigee.io/6-return-of-the-chaos-monkey",
+    "embedCode": "<script class=\"podigee-podcast-player\"\n src=\"https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js\"\n data-configuration=\"https://podcast-news.podigee.io/6-return-of-the-chaos-monkey/embed\"></script>",
+    "transcript": "https://podcast-news.podigee.io/6-return-of-the-chaos-monkey/transcript.json",
+    "number": 6,
+    "duration": 2223
+  },
+  "podcast": {
+    "feed": "https://podcast-news.podigee.io/feed/mp3",
+    "title": "Podigee Podcast News",
+    "subtitle": null,
+    "embedCode": "<script class=\"podigee-podcast-player\"\n src=\"https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js\"\n data-configuration=\"https://podcast-news.podigee.io/embed\"></script>",
+    "episodes": "https://podcast-news.podigee.io/embed/playlist?context=external",
+    "url": "https://podcast-news.podigee.io/",
+    "connections": {
+      "itunes": "https://itunes.apple.com/podcast/id1403134985",
+      "spotify": "https://open.spotify.com/show/2ZChoUyNqFitJKlsukcbEk?si=HsSsoAgeT0emvakB8nybbw"
+    },
+    "language": "de"
+  },
+  "extensions": {
+    "ChapterMarks": {
+      "disabled": false
+    },
+    "Download": {
+      "disabled": false
+    },
+    "EpisodeInfo": {
+      "disabled": false
+    },
+    "Playlist": {
+      "disabled": false
+    },
+    "Share": {
+      "disabled": false
+    },
+    "Transcript": {
+      "disabled": false
+    },
+    "SubscribeBar": {
+      "disabled": false
+    }
+  },
+  "options": {
+    "theme": "default",
+    "sslProxy": "https://cdn.podigee.com/ssl-proxy/",
+    "startPanel": null,
+    "customStyle": {
+      "primary": "#310f06",
+      "background": "rgb(246, 246, 246)",
+      "text": "#7a7a7a"
+    },
+    "themeCss": null,
+    "themeHtml": null
+  }
+}

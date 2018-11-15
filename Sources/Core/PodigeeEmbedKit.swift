@@ -15,6 +15,13 @@ public class PodigeeEmbedKit {
         case invalidPodcastDomain
     }
     
+    public enum PlaylistSorting: String {
+        /// Sort episodes in playlist by publish date. Most recent first.
+        case publishDate = "default"
+        /// Sort episodes in playlist by episode number in ascending order.
+        case episodeNumber = "numeric"
+    }
+    
     private static var jsonDecoder: JSONDecoder {
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .iso8601
@@ -58,14 +65,22 @@ public class PodigeeEmbedKit {
     /**
      Request the episode playlist for a podcast. This returns an array of episodes.
      - Parameter domain: The domain of the podcast, e.g. `bananaland.podigee.io`.
+     - Parameter pageSize: Maximum number of episodes this request should return. Defaults to 10.
+     - Parameter offset: Offset for paging requests. Defaults to 0.
+     - Parameter sortBy: Set the sorting of the returned episode playlist. Defaults to sorting by publish date.
      - Parameter complete: The closure called when the network request is finished. If successfull you receive an array of episodes.
      - returns: Void
      */
-    public static func playlistForPodcastWith(domain: String, complete: @escaping (_ episodes: Episodes?, _ error: Error?) -> Void) {
+    public static func playlistForPodcastWith(domain: String, pageSize: Int = 10, offset: Int = 0, sortBy: PlaylistSorting = .publishDate, complete: @escaping (_ episodes: Episodes?, _ error: Error?) -> Void) {
         var components = URLComponents()
         components.host = domain
         components.path = "/embed/playlist"
-        components.queryItems = [URLQueryItem(name: "context", value: "external")]
+        components.queryItems = [
+            URLQueryItem(name: "context", value: "external"),
+            URLQueryItem(name: "page_size", value: "\(pageSize)"),
+            URLQueryItem(name: "offset", value: "\(offset)"),
+            URLQueryItem(name: "playlist_order", value: sortBy.rawValue)
+        ]
         components.scheme = "https"
         
         guard let url = components.url else {

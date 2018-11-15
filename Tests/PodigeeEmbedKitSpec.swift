@@ -18,7 +18,7 @@ class PodigeeEmbedKitSpec: QuickSpec {
             
             stub(condition: isHost("podcast-news.podigee.io"), response: { (request) -> OHHTTPStubsResponse in
                 return OHHTTPStubsResponse(
-                    fileAtPath: OHPathForFile("podcast_news.json", type(of: self))!,
+                    fileAtPath: OHPathForFile("podcast_news_embed.json", type(of: self))!,
                     statusCode: 200,
                     headers: ["Content-Type":"application/json"]
                 )

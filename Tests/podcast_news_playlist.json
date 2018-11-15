@@ -1,0 +1,188 @@
+{
+  "episodes": [
+    {
+      "media": {
+        "mp3": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_6_return_of_the_chaos_monkey.mp3?v=1539951469&source=webplayer",
+        "aac": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_6_return_of_the_chaos_monkey.m4a?v=1539951470&source=webplayer",
+        "vorbis": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_6_return_of_the_chaos_monkey.ogg?v=1539951470&source=webplayer",
+        "opus": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_6_return_of_the_chaos_monkey.opus?v=1539951470&source=webplayer"
+      },
+      "coverUrl": "https://images.podigee.com/400x,sabagK4V_yGDanwc5brVBURwuLdbKAb5BQ1rx5zQcd9o=/https://cdn.podigee.com/uploads/u1/72b01048-d910-4809-8e97-3b25bb4561b1.png",
+      "title": "Return of the Chaos Monkey",
+      "subtitle": "Podigee Bewerbungsprozess, iTunes Probleme, Podcasthype",
+      "description": "<p><a href=\"https://www.podigee.com/de/blog/employee-number-one/\">Unser Ausschreiben für den/die erste/n Podigee-MitarbeiterIn</a></p>\n<p><a href=\"https://www.wuv.de/medien/wir_verstopfen_uns_den_markt_mit_produktionen_auf_kaffeeklatsch_niveau\">\"Wir verstopfen uns den Markt mit Produktionen auf Kaffeeklatsch-Niveau\"</a></p>\n<p><a href=\"https://www.facebook.com/gordon.schoenwaelder/posts/2329592543747495?__tn__=K-R\">Gordon Schönwälders Replik auf den W&amp;V Artikel</a></p>",
+      "chaptermarks": [
+        {
+          "title": "Intro",
+          "start": "00:00:28.751"
+        },
+        {
+          "title": "Der Hype um das Ende des Podcasthypes",
+          "start": "00:21:21.521"
+        },
+        {
+          "title": "Probleme mit iTunes",
+          "start": "00:13:05.042"
+        },
+        {
+          "title": "Podigee Bewerbungsprozess",
+          "start": "00:02:14.563"
+        }
+      ],
+      "url": "https://podcast-news.podigee.io/6-return-of-the-chaos-monkey",
+      "embedCode": "<script class=\"podigee-podcast-player\"\n src=\"https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js\"\n data-configuration=\"https://podcast-news.podigee.io/6-return-of-the-chaos-monkey/embed\"></script>",
+      "transcript": "https://podcast-news.podigee.io/6-return-of-the-chaos-monkey/transcript.json",
+      "number": 6,
+      "duration": 2223
+    },
+    {
+      "media": {
+        "mp3": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_5_soko_podcast.mp3?v=1537871703&source=webplayer",
+        "aac": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_5_soko_podcast.m4a?v=1537871704&source=webplayer",
+        "vorbis": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_5_soko_podcast.ogg?v=1537871704&source=webplayer",
+        "opus": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_5_soko_podcast.opus?v=1537871704&source=webplayer"
+      },
+      "coverUrl": "https://images.podigee.com/400x,sabagK4V_yGDanwc5brVBURwuLdbKAb5BQ1rx5zQcd9o=/https://cdn.podigee.com/uploads/u1/72b01048-d910-4809-8e97-3b25bb4561b1.png",
+      "title": "SOKO Podcast",
+      "subtitle": "Vorstellung neuer Mitarbeiter, Tutzinger Radiotage, Google Podcast, Deutscher Radiopreis und Statistiken Teil 2",
+      "description": "<p>Marketers: Get ready for Google's podcasting initiatives <a href=\"http://www.smartbrief.com/original/2018/07/marketers-get-ready-googles-podcasting-initiatives\">http://www.smartbrief.com/original/2018/07/marketers-get-ready-googles-podcasting-initiatives</a></p>\n<p>Beste Sendung: FluxFM mit \"Im Untergrund\" <a href=\"https://www.deutscher-radiopreis.de/radiopreis/gala_2018/preistraeger/Beste-Sendung-FluxFM-mit-Im-Untergrund,bestesendung142.html\">https://www.deutscher-radiopreis.de/radiopreis/gala_2018/preistraeger/Beste-Sendung-FluxFM-mit-Im-Untergrund,bestesendung142.html</a></p>",
+      "chaptermarks": [
+        {
+          "title": "Cold Open",
+          "start": "00:00:00.000"
+        },
+        {
+          "title": "Google Podcasts und das Fest & Flauschig Mysterium",
+          "start": "00:27:51.496"
+        },
+        {
+          "title": "Bericht von den Tutzinger Radiotagen 2018",
+          "start": "00:05:40.754"
+        },
+        {
+          "title": "Unser neuer Mitarbeiter",
+          "start": "00:01:36.788"
+        },
+        {
+          "title": "Statusupdate Podigee Premium",
+          "start": "00:21:07.387"
+        },
+        {
+          "title": "Begrüßung",
+          "start": "00:00:46.861"
+        },
+        {
+          "title": "Audible gewinnt beim Deutschen Radiopreis",
+          "start": "00:34:40.143"
+        },
+        {
+          "title": "Podcast Statistiken Teil 2",
+          "start": "00:41:30.990"
+        }
+      ],
+      "url": "https://podcast-news.podigee.io/5-soko-podcast",
+      "embedCode": "<script class=\"podigee-podcast-player\"\n src=\"https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js\"\n data-configuration=\"https://podcast-news.podigee.io/5-soko-podcast/embed\"></script>",
+      "transcript": "https://podcast-news.podigee.io/5-soko-podcast/transcript.json",
+      "number": 5,
+      "duration": 3647
+    },
+    {
+      "media": {
+        "mp3": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_4_reden_mit_einer_schonen_wand.mp3?v=1536055622&source=webplayer",
+        "aac": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_4_reden_mit_einer_schonen_wand.m4a?v=1536055624&source=webplayer",
+        "vorbis": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_4_reden_mit_einer_schonen_wand.ogg?v=1536055624&source=webplayer",
+        "opus": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_4_reden_mit_einer_schonen_wand.opus?v=1536055624&source=webplayer"
+      },
+      "coverUrl": "https://images.podigee.com/400x,sabagK4V_yGDanwc5brVBURwuLdbKAb5BQ1rx5zQcd9o=/https://cdn.podigee.com/uploads/u1/72b01048-d910-4809-8e97-3b25bb4561b1.png",
+      "title": "Reden mit einer schönen Wand",
+      "subtitle": "Probleme bei Apple Podcast Connect und Podcast Statistiken",
+      "description": "<p>Unser neuer Support-Mitarbeiter:\n<a href=\"https://twitter.com/vanilla_chief\">https://twitter.com/vanilla_chief</a></p>\n<p>Podcast Pingback aka PodPing:\n<a href=\"https://podping.info/about\">https://podping.info/about</a></p>\n<p>RAD (Remote Audio Data) von NPR und Co:\n<a href=\"https://docs.google.com/document/d/1N8xon2zSKN2ljD35ePY2Um8ivAwBO6OeLjBoBdNp3Gc/edit\">https://docs.google.com/document/d/1N8xon2zSKN2ljD35ePY2Um8ivAwBO6OeLjBoBdNp3Gc/edit</a></p>\n<p><a href=\"https://dev.npr.org/rad-spec\">https://dev.npr.org/rad-spec</a></p>",
+      "chaptermarks": [
+        {
+          "title": "Wir bekommen Zuwachs!",
+          "start": "00:01:40.994"
+        },
+        {
+          "title": "Apple Podcasts hat Probleme",
+          "start": "00:05:32.379"
+        },
+        {
+          "title": "Problematik: Podcast-Statistiken",
+          "start": "00:19:06"
+        }
+      ],
+      "url": "https://podcast-news.podigee.io/4-reden-mit-einer-schoenen-wand",
+      "embedCode": "<script class=\"podigee-podcast-player\"\n src=\"https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js\"\n data-configuration=\"https://podcast-news.podigee.io/4-reden-mit-einer-schoenen-wand/embed\"></script>",
+      "transcript": "https://podcast-news.podigee.io/4-reden-mit-einer-schoenen-wand/transcript.json",
+      "number": 4,
+      "duration": 2692
+    },
+    {
+      "media": {
+        "mp3": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_3_liebe_grusse_aus_philly.mp3?v=1534340459&source=webplayer",
+        "aac": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_3_liebe_grusse_aus_philly.m4a?v=1534340460&source=webplayer",
+        "vorbis": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_3_liebe_grusse_aus_philly.ogg?v=1534340460&source=webplayer",
+        "opus": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_3_liebe_grusse_aus_philly.opus?v=1534340461&source=webplayer"
+      },
+      "coverUrl": "https://images.podigee.com/400x,sabagK4V_yGDanwc5brVBURwuLdbKAb5BQ1rx5zQcd9o=/https://cdn.podigee.com/uploads/u1/72b01048-d910-4809-8e97-3b25bb4561b1.png",
+      "title": "Liebe Grüße aus Philly",
+      "subtitle": "Unser Bericht aus der Podcast Movement in Philadelphia und mehr",
+      "description": "<p>Interview mit Mati beim Sendegarten: <a href=\"https://www.sendegarten.de/2018/07/22/seg055-hoerbergsvater/\">https://www.sendegarten.de/2018/07/22/seg055-hoerbergsvater/</a></p>\n<p>Twitter-Diskussion\n\"Ein guter Podcast ist nicht länger als eine Stunde\"\n<a href=\"https://twitter.com/osk_germany/status/1017405720038260736\">https://twitter.com/osk_germany/status/1017405720038260736</a></p>\n<p>Podcast Movement\n<a href=\"https://podcastmovement.com\">https://podcastmovement.com</a></p>",
+      "chaptermarks": [],
+      "url": "https://podcast-news.podigee.io/3-liebe-grusse-aus-philly",
+      "embedCode": "<script class=\"podigee-podcast-player\"\n src=\"https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js\"\n data-configuration=\"https://podcast-news.podigee.io/3-liebe-grusse-aus-philly/embed\"></script>",
+      "transcript": "https://podcast-news.podigee.io/3-liebe-grusse-aus-philly/transcript.json",
+      "number": 3,
+      "duration": 3700
+    },
+    {
+      "media": {
+        "mp3": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_2_podcasts_fur_die_ewigkeit.mp3?v=1531363767&source=webplayer",
+        "aac": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_2_podcasts_fur_die_ewigkeit.m4a?v=1531363768&source=webplayer",
+        "vorbis": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_2_podcasts_fur_die_ewigkeit.ogg?v=1531363768&source=webplayer",
+        "opus": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_2_podcasts_fur_die_ewigkeit.opus?v=1531363768&source=webplayer"
+      },
+      "coverUrl": "https://images.podigee.com/400x,sabagK4V_yGDanwc5brVBURwuLdbKAb5BQ1rx5zQcd9o=/https://cdn.podigee.com/uploads/u1/72b01048-d910-4809-8e97-3b25bb4561b1.png",
+      "title": "Podcasts für die Ewigkeit",
+      "subtitle": "Von der Archivierung bis zur Zukunft des Podcastings",
+      "description": "<h2 id=\"aktuellethemen\">Aktuelle Themen:</h2>\n<h3 id=\"archivierungvonpodcasts\">Archivierung von Podcasts:</h3>\n<ul>\n<li><a href=\"https://bellocollective.com/pod-save-podcasts-ca5bb2fb1cb3\">Pod Save Podcasts\nSaving and Studying Podcasting’s Booming Sonic Culture</a></li>\n<li><a href=\"https://bellocollective.com/preserving-your-podcasts-3b02e2ba9929\">Preserving Your Podcasts\nOr, more informally, how to save your shit</a></li>\n</ul>\n<h3 id=\"audiogrammeauffacebook\">Audiogramme auf Facebook:</h3>\n<ul>\n<li><a href=\"https://www.headliner.app/blog/2018/06/25/facebook-ad-test-static-image-vs-headliner-videos/\">Test zur Wirkung von Audiogrammen auf Facebook</a></li>\n</ul>\n<h3 id=\"podigeeintern\">Podigee intern:</h3>\n<ul>\n<li><a href=\"https://www.podigee.com/de/blog/internet-explorer-webplayer-statistiken/\">IE Bug führt zu Verzerrungen bei den Statistiken</a></li>\n<li>Wir stellen bald alle Feeds und Websites auf SSL um</li>\n<li>Kodierungen können jetzt abgebrochen werden</li>\n<li>Facebook und YouTube Posting Verbesserungen</li>\n</ul>\n<h3 id=\"podcastsbeidengrimmeonlineawards\">Podcasts bei den Grimme Online Awards</h3>\n<ul>\n<li><a href=\"https://youtu.be/pnCOb_uJZqg?t=11m41s\">Nora Hespers Podcasts waren für den Grimme Online Award nominiert</a></li>\n<li>Leider hat auch dieses mal kein Podcast gewonnen</li>\n</ul>\n<h3 id=\"podcaststudie\">Podcast Studie</h3>\n<ul>\n<li><a href=\"http://www.ard-werbung.de/media-perspektiven/fachzeitschrift/2018/artikel/podcastnutzung-in-deutschland/http://\">Studie von ASS zum Thema Podcast Nutzung in Deutschland</a></li>\n<li><a href=\"http://www.ard-werbung.de/fileadmin/user_upload/media-perspektiven/pdf/2018/0218_Domenichini.pdf\">Studie als PDF</a></li>\n</ul>",
+      "chaptermarks": [
+        {
+          "title": "Archivierung von Podcasts",
+          "start": "00:00:56"
+        },
+        {
+          "title": "Audiogramme auf Facebook",
+          "start": "00:05:27"
+        },
+        {
+          "title": "Relevanz von Podcasts und Studie zur Podcast-Nutzung",
+          "start": "00:22:03"
+        }
+      ],
+      "url": "https://podcast-news.podigee.io/2-podcasts-fur-die-ewigkeit",
+      "embedCode": "<script class=\"podigee-podcast-player\"\n src=\"https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js\"\n data-configuration=\"https://podcast-news.podigee.io/2-podcasts-fur-die-ewigkeit/embed\"></script>",
+      "transcript": "https://podcast-news.podigee.io/2-podcasts-fur-die-ewigkeit/transcript.json",
+      "number": 2,
+      "duration": 3025
+    },
+    {
+      "media": {
+        "mp3": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_1_spotify_ist_zuruck_google_podcasts_ist_da.mp3?v=1529847044&source=webplayer",
+        "aac": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_1_spotify_ist_zuruck_google_podcasts_ist_da.m4a?v=1529847045&source=webplayer",
+        "vorbis": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_1_spotify_ist_zuruck_google_podcasts_ist_da.ogg?v=1529847045&source=webplayer",
+        "opus": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_1_spotify_ist_zuruck_google_podcasts_ist_da.opus?v=1529847045&source=webplayer"
+      },
+      "coverUrl": "https://images.podigee.com/400x,sabagK4V_yGDanwc5brVBURwuLdbKAb5BQ1rx5zQcd9o=/https://cdn.podigee.com/uploads/u1/72b01048-d910-4809-8e97-3b25bb4561b1.png",
+      "title": "Spotify ist zurück, Google Podcasts ist da",
+      "subtitle": "Spotify nimmt wieder neue Podcasts auf, Google präsentiert Google Podcasts",
+      "description": "<p>Aktuelle Themen:</p>\n<p>Spotify nimmt wieder Podcasts auf und verkürzt die benötigte Zeit für die Veröffentlichung neuer Episoden, Google steigt mit allem ins Podcasting ein und präsentiert Google Podcasts für Android, mit einem Podcatcher und Verzeichnis. Mit einem sehr spannenden Twist.</p>\n<p>Wir sprechen über das Interview im Hören/Sagen Newsletter mit Nicolas Semak, Mitgründer vom Podcast-Label Viertausendhertz.</p>\n<p>Der Podcast \"Schluss\" von Viertausendhertz: <a href=\"https://viertausendhertz.de/schluss/\">https://viertausendhertz.de/schluss/</a></p>\n<p>Hören/Sagen Newsletter: <a href=\"https://sandro-schroeder.de/podcasts-newsletter/\">https://sandro-schroeder.de/podcasts-newsletter/</a></p>\n<p>Google Podcasts bei Podigee: <a href=\"https://hilfe.podigee.com/article/119-meinen-podcast-bei-google-podcasts-veroffentlichen\">https://hilfe.podigee.com/article/119-meinen-podcast-bei-google-podcasts-veroffentlichen</a></p>\n<p>Wir berichten von unserem Fortschritt an Podigee Premium, unserer Lösung für die Monetarisierung von Premium-Podcast-Inhalten.</p>\n<p>Mehr Details zu Podigee-Premium: <a href=\"https://www.podigee.com/de/premium/\">https://www.podigee.com/de/premium/</a></p>\n<p>Und ganz am Ende haben wir noch einen besonderen Gast in unserem Programm: Jakob von Beste Freundinnen erzählt uns über das Auf die Ohren Festival am 28. und 29. Juli in Potsdam.</p>\n<p>Link zum Festival: <a href=\"http://auf-die-ohren.com\">http://auf-die-ohren.com</a></p>",
+      "chaptermarks": [],
+      "url": "https://podcast-news.podigee.io/1-spotify-ist-zuruck-google-podcasts-ist-da",
+      "embedCode": "<script class=\"podigee-podcast-player\"\n src=\"https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js\"\n data-configuration=\"https://podcast-news.podigee.io/1-spotify-ist-zuruck-google-podcasts-ist-da/embed\"></script>",
+      "transcript": "https://podcast-news.podigee.io/1-spotify-ist-zuruck-google-podcasts-ist-da/transcript.json",
+      "number": 1,
+      "duration": 2169
+    }
+  ]
+}

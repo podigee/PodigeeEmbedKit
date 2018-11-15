@@ -78,8 +78,10 @@ public struct Podcast: Codable {
     public let language: String
     
     public struct Connections: Codable {
-        public let itunes: URL
-        public let spotify: URL
+        public let itunes: URL?
+        public let spotify: URL?
+        public let deezer: URL?
+        public let alexa: URL?
     }
 }
 

@@ -15,11 +15,21 @@ public struct Playlist: Codable {
 
 public struct PodcastEmbed: Codable {
     /// The most recent episode of this podcast
-    public let episode: Episode
+    public let episode: Episode?
     /// Podcast related information
     public let podcast: Podcast
     /// Embed extensions. Contains information if they are enabled or disabled
     public let extensions: Extensions
+}
+
+extension PodcastEmbed {
+    public init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        // decode episode as nil if it can not be decoded because of empty dictionary
+        episode = try? values.decode(Episode.self, forKey: .episode)
+        podcast = try values.decode(Podcast.self, forKey: .podcast)
+        extensions = try values.decode(Extensions.self, forKey: .extensions)
+    }
 }
 
 public typealias Episodes = [Episode]

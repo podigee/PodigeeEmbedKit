@@ -46,8 +46,7 @@ public class PodigeeEmbedKit {
             return
         }
         var request = URLRequest(url: url)
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        
+        request.setValue("application/json", forHTTPHeaderField: "Accept")
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             guard let data = data else {
                 complete(nil, error)
@@ -88,7 +87,7 @@ public class PodigeeEmbedKit {
             return
         }
         var request = URLRequest(url: url)
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("application/json", forHTTPHeaderField: "Accept")
         
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             guard let data = data else {

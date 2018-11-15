@@ -26,19 +26,20 @@ public typealias Episodes = [Episode]
 public struct Episode: Codable {
     /// All media related to this episode. Contains URLs to different audio formats
     public let media: Media
-    /// URL for the coverart image
-    public let coverUrl: URL
+    /// URL for the coverart image, contains podcast coverart as fallback
+    public let coverUrl: URL?
     /// The episode title
     public let title: String
     /// The episode subtitle
-    public let subtitle: String
+    public let subtitle: String?
     /// The episode description
-    public let description: String
+    public let description: String?
     /// All chaptermarks for this episode
     public let chaptermarks: [Chaptermark]
     /// The URL to the episode on the web
     public let url: URL
-    public let transcript: URL
+    /// The URL to a text file representation of the transcript
+    public let transcript: URL?
     /// The episode number
     public let number: Int
     /// The duration of the episode in seconds
@@ -69,7 +70,7 @@ public struct Podcast: Codable {
     /// The podcast title
     public let title: String
     /// The podcast subtitle
-    public let subtitle: String
+    public let subtitle: String?
     /// The URL to the podcast website
     public let url: URL
     /// URLs for services this podcast is available on, e.g. iTunes or Spotify

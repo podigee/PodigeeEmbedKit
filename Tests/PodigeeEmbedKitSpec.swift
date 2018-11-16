@@ -136,6 +136,20 @@ class PodigeeEmbedKitSpec: QuickSpec {
                 })
                 expect(list?.episodes.count).toEventually(equal(6))
             }
+            it("returns page size error for invalid page size") {
+                var pageError: Error?
+                PodigeeEmbedKit.playlistForPodcastWith(domain: "podcast-news-playlist.io", pageSize: -5, complete: { (playlist, error) in
+                    pageError = error
+                })
+                expect(pageError).toEventually(matchError(PodigeeEmbedKit.PodigeeError.invalidPageSize))
+            }
+            it("returns offset error for invalid offset") {
+                var pageError: Error?
+                PodigeeEmbedKit.playlistForPodcastWith(domain: "podcast-news-playlist.io", offset: -10, complete: { (playlist, error) in
+                    pageError = error
+                })
+                expect(pageError).toEventually(matchError(PodigeeEmbedKit.PodigeeError.invalidOffset))
+            }
         }
 
     }

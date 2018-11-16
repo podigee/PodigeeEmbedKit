@@ -13,6 +13,8 @@ public class PodigeeEmbedKit {
     
     public enum PodigeeError: Error {
         case invalidPodcastDomain
+        case invalidPageSize
+        case invalidOffset
     }
     
     public enum PlaylistSorting: String {
@@ -75,6 +77,14 @@ public class PodigeeEmbedKit {
      - returns: Void
      */
     public static func playlistForPodcastWith(domain: String, pageSize: Int = 10, offset: Int = 0, sortBy: PlaylistSorting = .publishDate, complete: @escaping (_ playlist: Playlist?, _ error: Error?) -> Void) {
+        guard pageSize > 0 else {
+            complete(nil, PodigeeError.invalidPageSize)
+            return
+        }
+        guard offset >= 0 else {
+            complete(nil, PodigeeError.invalidOffset)
+            return
+        }
         var components = URLComponents()
         components.host = domain
         components.path = "/embed/playlist"

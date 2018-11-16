@@ -252,7 +252,6 @@
 			isa = PBXGroup;
 			children = (
 				3549BB8A1DA38C0A00C63030 /* PodigeeEmbedKitSpec.swift */,
-				F8D6A774219D7C2700535EE5 /* stubs */,
 				3549BB5B1DA38A8C00C63030 /* Supporting Files */,
 			);
 			path = Tests;
@@ -271,6 +270,7 @@
 		3549BB5B1DA38A8C00C63030 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F8D6A774219D7C2700535EE5 /* Network Stubs */,
 				3549BB581DA38A8800C63030 /* Info.plist */,
 				3549BB571DA38A8800C63030 /* Info-tvOS.plist */,
 			);
@@ -302,14 +302,14 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
-		F8D6A774219D7C2700535EE5 /* stubs */ = {
+		F8D6A774219D7C2700535EE5 /* Network Stubs */ = {
 			isa = PBXGroup;
 			children = (
 				F8D6A75C219D777800535EE5 /* podcast_news_embed.json */,
 				F8D6A775219D7E2D00535EE5 /* podcast_news_playlist.json */,
 				F8D6A779219DA66D00535EE5 /* podcast_news_embed.empty_episode.json */,
 			);
-			name = stubs;
+			name = "Network Stubs";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

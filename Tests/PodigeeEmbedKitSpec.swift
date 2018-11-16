@@ -42,7 +42,6 @@ class PodigeeEmbedKitSpec: QuickSpec {
                     }
                     expect(feedUrl).toEventually(equal(URL(string: "https://podcast-news.podigee.io/feed/mp3")!))
                 }
-                
             }
             describe("episode") {
                 it("returns nil for episode if no episode is published yet") {
@@ -55,9 +54,62 @@ class PodigeeEmbedKitSpec: QuickSpec {
                     expect(embed).toNotEventually(beNil())
                     expect(episode).toEventually(beNil())
                 }
+                it("return the correct title, subtitle and episode number") {
+                    var title: String?
+                    var subtitle: String?
+                    var number: Int?
+                    PodigeeEmbedKit.embedDataForPodcastWith(domain: "podcast-news-embed.io") { (podcastEmbed, error) in
+                        title = podcastEmbed?.episode?.title
+                        subtitle = podcastEmbed?.episode?.subtitle
+                        number = podcastEmbed?.episode?.number
+                    }
+                    expect(title).toEventually(equal("Return of the Chaos Monkey"))
+                    expect(subtitle).toEventually(equal("Podigee Bewerbungsprozess, iTunes Probleme, Podcasthype"))
+                    expect(number).toEventually(equal(6))
+                }
+                it("return the chapter marks") {
+                    var chapters: [Episode.Chaptermark]?
+                    PodigeeEmbedKit.embedDataForPodcastWith(domain: "podcast-news-embed.io") { (podcastEmbed, error) in
+                        chapters = podcastEmbed?.episode?.chaptermarks
+                    }
+                    expect(chapters?.count).toEventually(equal(4))
+                    expect(chapters?.first?.title).toEventually(equal("Intro"))
+                }
+                it("returns correct urls for cover, website and transcript") {
+                    var coverUrl: URL?
+                    var url: URL?
+                    var transcript: URL?
+                    PodigeeEmbedKit.embedDataForPodcastWith(domain: "podcast-news-embed.io") { (podcastEmbed, error) in
+                        coverUrl = podcastEmbed?.episode?.coverUrl
+                        url = podcastEmbed?.episode?.url
+                        transcript = podcastEmbed?.episode?.transcript
+                    }
+                    expect(coverUrl).toEventually(equal(URL(string: "https://images.podigee.com/400x,sabagK4V_yGDanwc5brVBURwuLdbKAb5BQ1rx5zQcd9o=/https://cdn.podigee.com/uploads/u1/72b01048-d910-4809-8e97-3b25bb4561b1.png")!))
+                    expect(url).toEventually(equal(URL(string: "https://podcast-news.podigee.io/6-return-of-the-chaos-monkey")!))
+                    expect(transcript).toEventually(equal(URL(string: "https://podcast-news.podigee.io/6-return-of-the-chaos-monkey/transcript.json")!))
+                }
             }
             describe("extensions") {
-                
+                it("returns the correct states for all extensions") {
+                    var chapterMarks, download, episodeInfo, playlist, share, transcript, subscribeBar: Bool?
+                    PodigeeEmbedKit.embedDataForPodcastWith(domain: "podcast-news-embed.io") { (podcastEmbed, error) in
+                        chapterMarks = podcastEmbed?.extensions.chapterMarks.disabled
+                        download = podcastEmbed?.extensions.download.disabled
+                        episodeInfo = podcastEmbed?.extensions.episodeInfo.disabled
+                        playlist = podcastEmbed?.extensions.playlist.disabled
+                        share = podcastEmbed?.extensions.share.disabled
+                        transcript = podcastEmbed?.extensions.transcript.disabled
+                        subscribeBar = podcastEmbed?.extensions.subscribeBar.disabled
+                        
+                    }
+                    expect(chapterMarks).toEventually(beFalse())
+                    expect(download).toEventually(beFalse())
+                    expect(episodeInfo).toEventually(beFalse())
+                    expect(playlist).toEventually(beFalse())
+                    expect(share).toEventually(beFalse())
+                    expect(transcript).toEventually(beFalse())
+                    expect(subscribeBar).toEventually(beFalse())
+                }
             }
         }
         

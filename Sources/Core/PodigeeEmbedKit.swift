@@ -70,7 +70,7 @@ public class PodigeeEmbedKit {
      - Parameter complete: The closure called when the network request is finished. If successfull you receive an array of episodes.
      - returns: Void
      */
-    public static func playlistForPodcastWith(domain: String, pageSize: Int = 10, offset: Int = 0, sortBy: PlaylistSorting = .publishDate, complete: @escaping (_ episodes: Episodes?, _ error: Error?) -> Void) {
+    public static func playlistForPodcastWith(domain: String, pageSize: Int = 10, offset: Int = 0, sortBy: PlaylistSorting = .publishDate, complete: @escaping (_ playlist: Playlist?, _ error: Error?) -> Void) {
         var components = URLComponents()
         components.host = domain
         components.path = "/embed/playlist"
@@ -95,8 +95,8 @@ public class PodigeeEmbedKit {
                 return
             }
             do {
-                let embed = try jsonDecoder.decode(Episodes.self, from: data)
-                complete(embed, nil)
+                let playlist = try jsonDecoder.decode(Playlist.self, from: data)
+                complete(playlist, nil)
             } catch {
                 complete(nil, error)
             }

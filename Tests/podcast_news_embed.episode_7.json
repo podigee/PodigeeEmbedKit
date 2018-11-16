@@ -1,0 +1,105 @@
+{
+  "episode": {
+    "media": {
+      "mp3": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_7_podcatcher_in_the_rye.mp3?v=1542372515&source=webplayer",
+      "aac": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_7_podcatcher_in_the_rye.m4a?v=1542372517&source=webplayer",
+      "vorbis": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_7_podcatcher_in_the_rye.ogg?v=1542372517&source=webplayer",
+      "opus": "https://cdn.podigee.com/media/podcast_4411_podigee_podcast_news_episode_7_podcatcher_in_the_rye.opus?v=1542372518&source=webplayer"
+    },
+    "coverUrl": "https://images.podigee.com/400x,sabagK4V_yGDanwc5brVBURwuLdbKAb5BQ1rx5zQcd9o=/https://cdn.podigee.com/uploads/u1/72b01048-d910-4809-8e97-3b25bb4561b1.png",
+    "title": "Podcatcher in the Rye",
+    "subtitle": "Wordpress-(Life-)Hacks und Statistiken Teil 3",
+    "description": "<p><a href=\"https://podnews.net/update/apple-watch-surprise\">Apple Watch Podcast Downloads</a></p>\n<p><a href=\"https://sendegate.de/t/sicherheitsluecke-in-dsgvo-tool/7915\">Sicherheitslücke bei DSGVO Wordpress Plugin</a></p>\n<p><a href=\"https://www.podigee.com/de/blog/wordpress-quick-publish-plugin/\">Wordpress Quick Publish Plugin</a></p>\n<p><a href=\"https://podnews.net/update/spotify-measurement\">What is Spotify really measuring?</a></p>",
+    "chaptermarks": [
+      {
+        "title": "Wordpress-Hack",
+        "start": "00:14:19.582"
+      },
+      {
+        "title": "Begrüßung",
+        "start": "00:00:24.176"
+      },
+      {
+        "title": "Podcast hören über die Apple Watch",
+        "start": "00:01:15.975"
+      },
+      {
+        "title": "Cold Open",
+        "start": "00:00:00.000"
+      },
+      {
+        "title": "Podigee Backup-Strategie",
+        "start": "00:22:25.906"
+      },
+      {
+        "title": "Probleme bei Spotify",
+        "start": "00:12:15.577"
+      },
+      {
+        "title": "Hindenburg unterstützt Podigee",
+        "start": "00:35:24.414"
+      },
+      {
+        "title": "Wordpress Quick Publish Plugin",
+        "start": "00:36:52.397"
+      },
+      {
+        "title": "Podcast-Statistiken Teil 3: IAB Richtlinien",
+        "start": "00:39:40.604"
+      }
+    ],
+    "url": "https://podcast-news.podigee.io/7-podcatcher-in-the-rye",
+    "embedCode": "<script class=\"podigee-podcast-player\"\n src=\"https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js\"\n data-configuration=\"https://podcast-news.podigee.io/7-podcatcher-in-the-rye/embed\"></script>",
+    "transcript": "https://podcast-news.podigee.io/7-podcatcher-in-the-rye/transcript.json",
+    "number": 7,
+    "duration": 3255
+  },
+  "podcast": {
+    "feed": "https://podcast-news.podigee.io/feed/mp3",
+    "title": "Podigee Podcast News",
+    "subtitle": null,
+    "embedCode": "<script class=\"podigee-podcast-player\"\n src=\"https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js\"\n data-configuration=\"https://podcast-news.podigee.io/embed\"></script>",
+    "episodes": "https://podcast-news.podigee.io/embed/playlist?context=website",
+    "url": "https://podcast-news.podigee.io/",
+    "connections": {
+      "itunes": "https://itunes.apple.com/podcast/id1403134985",
+      "spotify": "https://open.spotify.com/show/2ZChoUyNqFitJKlsukcbEk?si=HsSsoAgeT0emvakB8nybbw"
+    },
+    "language": "de"
+  },
+  "extensions": {
+    "ChapterMarks": {
+      "disabled": false
+    },
+    "Download": {
+      "disabled": false
+    },
+    "EpisodeInfo": {
+      "disabled": false
+    },
+    "Playlist": {
+      "disabled": false
+    },
+    "Share": {
+      "disabled": false
+    },
+    "Transcript": {
+      "disabled": false
+    },
+    "SubscribeBar": {
+      "disabled": false
+    }
+  },
+  "options": {
+    "theme": "default",
+    "sslProxy": "https://cdn.podigee.com/ssl-proxy/",
+    "startPanel": null,
+    "customStyle": {
+      "primary": "#310f06",
+      "background": "rgb(246, 246, 246)",
+      "text": "#7a7a7a"
+    },
+    "themeCss": null,
+    "themeHtml": null
+  }
+}

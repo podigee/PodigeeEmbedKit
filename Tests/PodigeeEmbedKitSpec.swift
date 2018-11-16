@@ -88,6 +88,21 @@ class PodigeeEmbedKitSpec: QuickSpec {
                     expect(url).toEventually(equal(URL(string: "https://podcast-news.podigee.io/6-return-of-the-chaos-monkey")!))
                     expect(transcript).toEventually(equal(URL(string: "https://podcast-news.podigee.io/6-return-of-the-chaos-monkey/transcript.json")!))
                 }
+                context("specific episode path is set") {
+                    it("returns the correct episode") {
+                        var title: String?
+                        var subtitle: String?
+                        var number: Int?
+                        PodigeeEmbedKit.embedDataForPodcastWith(domain: "podcast-news-embed-episode-7.io", episodePath: "7-podcatcher-in-the-rye", complete: { (podcastEmbed, error) in
+                            title = podcastEmbed?.episode?.title
+                            subtitle = podcastEmbed?.episode?.subtitle
+                            number = podcastEmbed?.episode?.number
+                        })
+                        expect(title).toEventually(equal("Podcatcher in the Rye"))
+                        expect(subtitle).toEventually(equal("Wordpress-(Life-)Hacks und Statistiken Teil 3"))
+                        expect(number).toEventually(equal(7))
+                    }
+                }
             }
             describe("extensions") {
                 it("returns the correct states for all extensions") {
@@ -134,6 +149,13 @@ class PodigeeEmbedKitSpec: QuickSpec {
             stub(condition: isHost("podcast-news-embed.io"), response: { (request) -> OHHTTPStubsResponse in
                 return OHHTTPStubsResponse(
                     fileAtPath: OHPathForFile("podcast_news_embed.json", type(of: self))!,
+                    statusCode: 200,
+                    headers: ["Content-Type":"application/json"]
+                )
+            })
+            stub(condition: isHost("podcast-news-embed-episode-7.io"), response: { (request) -> OHHTTPStubsResponse in
+                return OHHTTPStubsResponse(
+                    fileAtPath: OHPathForFile("podcast_news_embed.episode_7.json", type(of: self))!,
                     statusCode: 200,
                     headers: ["Content-Type":"application/json"]
                 )

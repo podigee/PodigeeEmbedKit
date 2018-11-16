@@ -33,6 +33,9 @@
 		35B742371F82A61E00829B21 /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 35B742351F82A61E00829B21 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		35B742381F82A62900829B21 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B742341F82A61D00829B21 /* Nimble.framework */; };
 		35B742391F82A62900829B21 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B742351F82A61E00829B21 /* Quick.framework */; };
+		F847C9D9219F060D0048A975 /* podcast_news_embed.episode_7.json in Resources */ = {isa = PBXBuildFile; fileRef = F847C9D8219F060D0048A975 /* podcast_news_embed.episode_7.json */; };
+		F847C9DA219F060D0048A975 /* podcast_news_embed.episode_7.json in Resources */ = {isa = PBXBuildFile; fileRef = F847C9D8219F060D0048A975 /* podcast_news_embed.episode_7.json */; };
+		F847C9DB219F060D0048A975 /* podcast_news_embed.episode_7.json in Resources */ = {isa = PBXBuildFile; fileRef = F847C9D8219F060D0048A975 /* podcast_news_embed.episode_7.json */; };
 		F84A97BE2196E2ED00186BC2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84A97BD2196E2ED00186BC2 /* Model.swift */; };
 		F84F43E52199994C00C6C833 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84A97BD2196E2ED00186BC2 /* Model.swift */; };
 		F84F43E62199994D00C6C833 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84A97BD2196E2ED00186BC2 /* Model.swift */; };
@@ -141,6 +144,7 @@
 		35B7422E1F82A5E000829B21 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		35B742341F82A61D00829B21 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
 		35B742351F82A61E00829B21 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
+		F847C9D8219F060D0048A975 /* podcast_news_embed.episode_7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = podcast_news_embed.episode_7.json; sourceTree = "<group>"; };
 		F84A97BD2196E2ED00186BC2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		F8D6A75C219D777800535EE5 /* podcast_news_embed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = podcast_news_embed.json; sourceTree = "<group>"; };
 		F8D6A76B219D7A8400535EE5 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
@@ -307,6 +311,7 @@
 			children = (
 				F8D6A75C219D777800535EE5 /* podcast_news_embed.json */,
 				F8D6A775219D7E2D00535EE5 /* podcast_news_playlist.json */,
+				F847C9D8219F060D0048A975 /* podcast_news_embed.episode_7.json */,
 				F8D6A779219DA66D00535EE5 /* podcast_news_embed.empty_episode.json */,
 			);
 			name = "Network Stubs";
@@ -582,6 +587,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F847C9D9219F060D0048A975 /* podcast_news_embed.episode_7.json in Resources */,
 				F8D6A77A219DA66D00535EE5 /* podcast_news_embed.empty_episode.json in Resources */,
 				F8D6A75D219D777800535EE5 /* podcast_news_embed.json in Resources */,
 				F8D6A776219D7E2D00535EE5 /* podcast_news_playlist.json in Resources */,
@@ -592,6 +598,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F847C9DB219F060D0048A975 /* podcast_news_embed.episode_7.json in Resources */,
 				F8D6A77C219DA66D00535EE5 /* podcast_news_embed.empty_episode.json in Resources */,
 				F8D6A75F219D777800535EE5 /* podcast_news_embed.json in Resources */,
 				F8D6A778219D7E2D00535EE5 /* podcast_news_playlist.json in Resources */,
@@ -602,6 +609,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F847C9DA219F060D0048A975 /* podcast_news_embed.episode_7.json in Resources */,
 				F8D6A77B219DA66D00535EE5 /* podcast_news_embed.empty_episode.json in Resources */,
 				F8D6A75E219D777800535EE5 /* podcast_news_embed.json in Resources */,
 				F8D6A777219D7E2D00535EE5 /* podcast_news_playlist.json in Resources */,

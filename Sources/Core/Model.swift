@@ -48,7 +48,7 @@ public struct Episode: Codable {
     public let chaptermarks: [Chaptermark]
     /// The URL to the episode on the web
     public let url: URL
-    /// The URL to a text file representation of the transcript
+    /// The URL to a JSON representation of the transcript
     public let transcript: URL?
     /// The episode number
     public let number: Int

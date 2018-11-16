@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
  s.name = 'PodigeeEmbedKit'
  s.version = '0.0.1'
  s.license = { :type => "MIT", :file => "LICENSE" }
- s.summary = 'iOS Framework to embed podcast episodes hosted on Podigee'
+ s.summary = 'Swift Framework to embed podcast episodes hosted on Podigee'
  s.homepage = 'https://podigee.com'
  s.social_media_url = 'https://twitter.com/podigee'
  s.authors = { "Podigee" => "hello@podigee.com" }

@@ -114,7 +114,13 @@ class PodigeeEmbedKitSpec: QuickSpec {
         }
         
         describe("playlist") {
-            
+            it("return the correct number of episodes") {
+                var list: Playlist?
+                PodigeeEmbedKit.playlistForPodcastWith(domain: "podcast-news-playlist.io", complete: { (playlist, error) in
+                    list = playlist
+                })
+                expect(list?.episodes.count).toEventually(equal(6))
+            }
         }
 
     }

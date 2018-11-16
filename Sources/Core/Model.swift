@@ -14,7 +14,7 @@ public struct Playlist: Codable {
 }
 
 public struct PodcastEmbed: Codable {
-    /// The most recent episode of this podcast
+    /// Episode metadata for the requested episode.
     public let episode: Episode?
     /// Podcast related information
     public let podcast: Podcast

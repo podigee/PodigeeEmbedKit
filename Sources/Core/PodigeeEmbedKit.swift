@@ -31,20 +31,24 @@ public class PodigeeEmbedKit {
     /**
      Request embed data information for a podcast. This contains information about the podcast and data for the most recent published episode.
      - Parameter domain: The domain of the podcast, e.g. `bananaland.podigee.io`.
+     - Parameter episodePath: The url path component for the episode, e.g. `63-bbc-sound-sammlung`. If set to `nil` the most recent episode of the podcast will be included in the response.
      - Parameter complete: The closure called when the network request is finished.
      - returns: Void
     */
-    public static func embedDataForPodcastWith(domain: String, complete: @escaping (_ embed: PodcastEmbed?, _ error: Error?) -> Void) {
+    public static func embedDataForPodcastWith(domain: String, episodePath: String? = nil, complete: @escaping (_ embed: PodcastEmbed?, _ error: Error?) -> Void) {
         var components = URLComponents()
         components.host = domain
-        components.path = "/embed"
         components.queryItems = [URLQueryItem(name: "context", value: "external")]
         components.scheme = "https"
         
-        guard let url = components.url else {
+        guard var url = components.url else {
             complete(nil, PodigeeError.invalidPodcastDomain)
             return
         }
+        if let path = episodePath {
+            url.appendPathComponent(path)
+        }
+        url.appendPathComponent("embed")
         var request = URLRequest(url: url)
         request.setValue("application/json", forHTTPHeaderField: "Accept")
         URLSession.shared.dataTask(with: request) { (data, response, error) in

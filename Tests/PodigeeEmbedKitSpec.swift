@@ -54,7 +54,7 @@ class PodigeeEmbedKitSpec: QuickSpec {
                     expect(embed).toNotEventually(beNil())
                     expect(episode).toEventually(beNil())
                 }
-                it("return the correct title, subtitle and episode number") {
+                it("returns the correct title, subtitle and episode number") {
                     var title: String?
                     var subtitle: String?
                     var number: Int?
@@ -67,7 +67,7 @@ class PodigeeEmbedKitSpec: QuickSpec {
                     expect(subtitle).toEventually(equal("Podigee Bewerbungsprozess, iTunes Probleme, Podcasthype"))
                     expect(number).toEventually(equal(6))
                 }
-                it("return the chapter marks") {
+                it("returns the chapter marks") {
                     var chapters: [Episode.Chaptermark]?
                     PodigeeEmbedKit.embedDataForPodcastWith(domain: "podcast-news-embed.io") { (podcastEmbed, error) in
                         chapters = podcastEmbed?.episode?.chaptermarks
@@ -114,7 +114,7 @@ class PodigeeEmbedKitSpec: QuickSpec {
         }
         
         describe("playlist") {
-            it("return the correct number of episodes") {
+            it("returns the correct number of episodes") {
                 var list: Playlist?
                 PodigeeEmbedKit.playlistForPodcastWith(domain: "podcast-news-playlist.io", complete: { (playlist, error) in
                     list = playlist

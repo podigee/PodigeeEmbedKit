@@ -18,7 +18,7 @@ iOS Framework to embed podcast episodes hosted on Podigee
 
 ## Requirements
 
-- iOS 10.0+ / Mac OS X 10.10+ / tvOS 9.0+ / watchOS 2.0+
+- iOS 10.0+ / Mac OS X 10.10+ / tvOS 10.0+ / watchOS 3.0+
 - Xcode 10.0+
 
 ## Installation
@@ -37,7 +37,7 @@ To integrate PodigeeEmbedKit into your Xcode project using CocoaPods, specify it
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
+platform :ios, '10.0'
 use_frameworks!
 
 pod 'PodigeeEmbedKit', '~> 0.0.1'

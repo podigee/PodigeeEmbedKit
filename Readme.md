@@ -1,13 +1,11 @@
 # PodigeeEmbedKit
 
-[![Platforms](https://img.shields.io/cocoapods/p/PodigeeEmbedKit.svg)](https://cocoapods.org/pods/PodigeeEmbedKit)
+[![Platforms](https://img.shields.io/badge/platform-ios%20%7C%20macOS%20%7C%20watchOS%20%7C%20tvOS-lightgrey.svg)](#)
 [![License](https://img.shields.io/cocoapods/l/PodigeeEmbedKit.svg)](https://raw.githubusercontent.com/podigee/PodigeeEmbedKit/master/LICENSE)
 
 [![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![CocoaPods compatible](https://img.shields.io/cocoapods/v/PodigeeEmbedKit.svg)](https://cocoapods.org/pods/PodigeeEmbedKit)
-
-[![Travis](https://img.shields.io/travis/podigee/PodigeeEmbedKit/master.svg)](https://travis-ci.org/podigee/PodigeeEmbedKit/branches)
+[![CocoaPods compatible](https://img.shields.io/badge/Cocoapods-compatible-brightgreen.svg)](https://cocoapods.org)
 
 The `PodigeeEmbedKit` framework allows you to display information about a podcast hosted on [podigee.com](https://podigee.com) in your iOS, macOS or tvOS app. You can get data for the most recent published episode, a specific episode and even a playlist of all published episodes.
 

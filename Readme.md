@@ -94,58 +94,6 @@ let package = Package(
 ```
 </details>
 
-### Manually
-
-If you prefer not to use either of the aforementioned dependency managers, you can integrate PodigeeEmbedKit into your project manually.
-
-<details>
-  <summary><strong>Git Submodules</strong></summary><p>
-
-- Open up Terminal, `cd` into your top-level project directory, and run the following command "if" your project is not initialized as a git repository:
-
-```bash
-$ git init
-```
-
-- Add PodigeeEmbedKit as a git [submodule](http://git-scm.com/docs/git-submodule) by running the following command:
-
-```bash
-$ git submodule add https://github.com/podigee/PodigeeEmbedKit.git
-$ git submodule update --init --recursive
-```
-
-- Open the new `PodigeeEmbedKit` folder, and drag the `PodigeeEmbedKit.xcodeproj` into the Project Navigator of your application's Xcode project.
-
-    > It should appear nested underneath your application's blue project icon. Whether it is above or below all the other Xcode groups does not matter.
-
-- Select the `PodigeeEmbedKit.xcodeproj` in the Project Navigator and verify the deployment target matches that of your application target.
-- Next, select your application project in the Project Navigator (blue project icon) to navigate to the target configuration window and select the application target under the "Targets" heading in the sidebar.
-- In the tab bar at the top of that window, open the "General" panel.
-- Click on the `+` button under the "Embedded Binaries" section.
-- You will see two different `PodigeeEmbedKit.xcodeproj` folders each with two different versions of the `PodigeeEmbedKit.framework` nested inside a `Products` folder.
-
-    > It does not matter which `Products` folder you choose from.
-
-- Select the `PodigeeEmbedKit.framework`.
-
-- And that's it!
-
-> The `PodigeeEmbedKit.framework` is automagically added as a target dependency, linked framework and embedded framework in a copy files build phase which is all you need to build on the simulator and a device.
-
-</p></details>
-
-<details>
-  <summary><strong>Embedded Binaries</strong></summary><p>
-
-- Download the latest release from https://github.com/podigee/PodigeeEmbedKit/releases
-- Next, select your application project in the Project Navigator (blue project icon) to navigate to the target configuration window and select the application target under the "Targets" heading in the sidebar.
-- In the tab bar at the top of that window, open the "General" panel.
-- Click on the `+` button under the "Embedded Binaries" section.
-- Add the downloaded `PodigeeEmbedKit.framework`.
-- And that's it!
-
-</p></details>
-
 ## Usage
 
 When you request data you always have to provide the domain of the podcast hosted on Podigee. The domain format is `podcast-specific-subdomain.podigee.io`, e.g. `podcast-news.podigee.io`.

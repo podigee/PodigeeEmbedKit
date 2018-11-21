@@ -1,7 +1,6 @@
 # PodigeeEmbedKit
 
 [![Platforms](https://img.shields.io/badge/platform-ios%20%7C%20macOS%20%7C%20watchOS%20%7C%20tvOS-lightgrey.svg)](#)
-[![License](https://img.shields.io/cocoapods/l/PodigeeEmbedKit.svg)](https://raw.githubusercontent.com/podigee/PodigeeEmbedKit/master/LICENSE)
 
 [![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)

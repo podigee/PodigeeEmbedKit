@@ -161,7 +161,7 @@ class PodigeeEmbedKitSpec: QuickSpec {
     }
     
     private func makeDummyEpisode() -> Episode {
-        return Episode(media: Episode.Media(mp3: URL(string: "https://podigee.io/file.audio")!, aac: URL(string: "https://podigee.io/file.audio")!, vorbis: URL(string: "https://podigee.io/file.audio")!, opus: URL(string: "https://podigee.io/file.audio")!), coverUrl: nil, title: "Title", subtitle: "Subtitle", description: "Some description", chaptermarks: [], url: URL(string: "https://podigee.io/podcast")!, transcript: nil, number: 4, duration: 1234)
+        return Episode(media: Episode.Media(mp3: URL(string: "https://podigee.io/file.audio")!), coverUrl: nil, title: "Title", subtitle: "Subtitle", description: "Some description", chaptermarks: [], url: URL(string: "https://podigee.io/podcast")!, transcript: nil, number: 4, duration: 1234)
     }
     
     private func stubRequests() {

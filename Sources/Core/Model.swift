@@ -68,9 +68,6 @@ public struct Episode: Codable {
     
     public struct Media: Codable {
         public let mp3: URL
-        public let aac: URL
-        public let vorbis: URL
-        public let opus: URL
     }
 }
 

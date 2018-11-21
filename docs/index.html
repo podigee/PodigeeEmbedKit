@@ -13,7 +13,7 @@
     <a title="PodigeeEmbedKit  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">PodigeeEmbedKit Docs</a> (39% documented)</p>
+        <p><a href="index.html">PodigeeEmbedKit Docs</a> (41% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -106,14 +106,11 @@
             
             <h1 id='podigeeembedkit' class='heading'>PodigeeEmbedKit</h1>
 
-<p><a href="https://cocoapods.org/pods/PodigeeEmbedKit"><img src="https://img.shields.io/cocoapods/p/PodigeeEmbedKit.svg" alt="Platforms"></a>
-<a href="https://raw.githubusercontent.com/podigee/PodigeeEmbedKit/master/LICENSE"><img src="https://img.shields.io/cocoapods/l/PodigeeEmbedKit.svg" alt="License"></a></p>
+<p><a href="#"><img src="https://img.shields.io/badge/platform-ios%20%7C%20macOS%20%7C%20watchOS%20%7C%20tvOS-lightgrey.svg" alt="Platforms"></a></p>
 
 <p><a href="https://github.com/apple/swift-package-manager"><img src="https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg" alt="Swift Package Manager"></a>
 <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible"></a>
-<a href="https://cocoapods.org/pods/PodigeeEmbedKit"><img src="https://img.shields.io/cocoapods/v/PodigeeEmbedKit.svg" alt="CocoaPods compatible"></a></p>
-
-<p><a href="https://travis-ci.org/podigee/PodigeeEmbedKit/branches"><img src="https://img.shields.io/travis/podigee/PodigeeEmbedKit/master.svg" alt="Travis"></a></p>
+<a href="https://cocoapods.org"><img src="https://img.shields.io/badge/Cocoapods-compatible-brightgreen.svg" alt="CocoaPods compatible"></a></p>
 
 <p>The <code><a href="Classes/PodigeeEmbedKit.html">PodigeeEmbedKit</a></code> framework allows you to display information about a podcast hosted on <a href="https://podigee.com">podigee.com</a> in your iOS, macOS or tvOS app. You can get data for the most recent published episode, a specific episode and even a playlist of all published episodes.</p>
 
@@ -144,12 +141,13 @@ $ gem install cocoapods
 To integrate PodigeeEmbedKit into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 &ldquo;`ruby
-source &lsquo;https://github.com/CocoaPods/Specs.git&rsquo;
 platform :ios, &lsquo;10.0&rsquo;
 use_frameworks!
 
-pod &lsquo;PodigeeEmbedKit&rsquo;, &lsquo;~> 0.0.1&rsquo;
+pod &lsquo;PodigeeEmbedKit&rsquo;, :git => &lsquo;https://github.com/podigee/PodigeeEmbedKit.git&rsquo;, :branch => &lsquo;master&rsquo;
 &rdquo;`
+
+You have to link to the Github repository directly, because it is not publically available in the Cocoapods directory.
 
 Then, run the following command:
 
@@ -200,57 +198,6 @@ let package = Package(
 )
 &ldquo;`
 </details>
-<h3 id='manually' class='heading'>Manually</h3>
-
-<p>If you prefer not to use either of the aforementioned dependency managers, you can integrate PodigeeEmbedKit into your project manually.</p>
-
-<details>
-  <summary><strong>Git Submodules</strong></summary><p>
-
-- Open up Terminal, `cd` into your top-level project directory, and run the following command &quot;if&rdquo; your project is not initialized as a git repository:
-
-&ldquo;`bash
-$ git init
-&rdquo;`
-
-- Add PodigeeEmbedKit as a git [submodule](http://git-scm.com/docs/git-submodule) by running the following command:
-
-&ldquo;`bash
-$ git submodule add https://github.com/podigee/PodigeeEmbedKit.git
-$ git submodule update &ndash;init &ndash;recursive
-&rdquo;`
-
-- Open the new `PodigeeEmbedKit` folder, and drag the `PodigeeEmbedKit.xcodeproj` into the Project Navigator of your application&rsquo;s Xcode project.
-
-    > It should appear nested underneath your application&rsquo;s blue project icon. Whether it is above or below all the other Xcode groups does not matter.
-
-- Select the `PodigeeEmbedKit.xcodeproj` in the Project Navigator and verify the deployment target matches that of your application target.
-- Next, select your application project in the Project Navigator (blue project icon) to navigate to the target configuration window and select the application target under the &ldquo;Targets&rdquo; heading in the sidebar.
-- In the tab bar at the top of that window, open the &ldquo;General&rdquo; panel.
-- Click on the `+` button under the &ldquo;Embedded Binaries&rdquo; section.
-- You will see two different `PodigeeEmbedKit.xcodeproj` folders each with two different versions of the `PodigeeEmbedKit.framework` nested inside a `Products` folder.
-
-    > It does not matter which `Products` folder you choose from.
-
-- Select the `PodigeeEmbedKit.framework`.
-
-- And that&rsquo;s it!
-
-> The `PodigeeEmbedKit.framework` is automagically added as a target dependency, linked framework and embedded framework in a copy files build phase which is all you need to build on the simulator and a device.
-
-</p></details>
-
-<details>
-  <summary><strong>Embedded Binaries</strong></summary><p>
-
-- Download the latest release from https://github.com/podigee/PodigeeEmbedKit/releases
-- Next, select your application project in the Project Navigator (blue project icon) to navigate to the target configuration window and select the application target under the &ldquo;Targets&rdquo; heading in the sidebar.
-- In the tab bar at the top of that window, open the &ldquo;General&rdquo; panel.
-- Click on the `+` button under the &ldquo;Embedded Binaries&rdquo; section.
-- Add the downloaded `PodigeeEmbedKit.framework`.
-- And that&rsquo;s it!
-
-</p></details>
 <h2 id='usage' class='heading'>Usage</h2>
 
 <p>When you request data you always have to provide the domain of the podcast hosted on Podigee. The domain format is <code>podcast-specific-subdomain.podigee.io</code>, e.g. <code>podcast-news.podigee.io</code>.</p>
@@ -328,9 +275,6 @@ $ git submodule update &ndash;init &ndash;recursive
       <span class="k">let</span> <span class="nv">episodes</span> <span class="o">=</span> <span class="n">playlist</span><span class="o">.</span><span class="n">episodes</span>
   <span class="p">})</span>
 </code></pre>
-<h2 id='contributing' class='heading'>Contributing</h2>
-
-<p>Issues and pull requests are welcome!</p>
 <h2 id='author' class='heading'>Author</h2>
 
 <p>Podigee <a href="https://twitter.com/podigee">@podigee</a></p>
@@ -341,7 +285,7 @@ $ git submodule update &ndash;init &ndash;recursive
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="https://podigee.com" target="_blank" rel="external">Podigee</a>. All rights reserved. (Last updated: 2018-11-16)</p>
+          <p>&copy; 2018 <a class="link" href="https://podigee.com" target="_blank" rel="external">Podigee</a>. All rights reserved. (Last updated: 2018-11-21)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

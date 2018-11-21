@@ -282,7 +282,21 @@
     },
     {
       "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/PodigeeEmbedKit.swift",
-      "line": 18,
+      "line": 16,
+      "symbol": "PodigeeEmbedKit.PodigeeError.invalidPageSize",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/PodigeeEmbedKit.swift",
+      "line": 17,
+      "symbol": "PodigeeEmbedKit.PodigeeError.invalidOffset",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/PodigeeEmbedKit.swift",
+      "line": 20,
       "symbol": "PodigeeEmbedKit.PlaylistSorting",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"

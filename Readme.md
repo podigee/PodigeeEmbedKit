@@ -36,12 +36,13 @@ $ gem install cocoapods
 To integrate PodigeeEmbedKit into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
 use_frameworks!
 
-pod 'PodigeeEmbedKit', '~> 0.0.1'
+pod 'PodigeeEmbedKit', :git => 'https://github.com/podigee/PodigeeEmbedKit.git', :branch => 'master'
 ```
+
+You have to link to the Github repository directly, because it is not publically available in the Cocoapods directory.
 
 Then, run the following command:
 

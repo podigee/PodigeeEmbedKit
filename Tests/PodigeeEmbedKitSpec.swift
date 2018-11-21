@@ -12,10 +12,16 @@ import OHHTTPStubs
 @testable import PodigeeEmbedKit
 
 class PodigeeEmbedKitSpec: QuickSpec {
-
-    override func spec() {
+    
+    override func setUp() {
         stubRequests()
-        
+    }
+    
+    override func tearDown() {
+        OHHTTPStubs.removeAllStubs()
+    }
+
+    override func spec() {        
         describe("podcast embed") {
             describe("podcast") {
                 it("returns the correct podcast title") {
@@ -159,39 +165,34 @@ class PodigeeEmbedKitSpec: QuickSpec {
     }
     
     private func stubRequests() {
-        beforeSuite {
-            stub(condition: isHost("podcast-news-embed.io"), response: { (request) -> OHHTTPStubsResponse in
-                return OHHTTPStubsResponse(
-                    fileAtPath: OHPathForFile("podcast_news_embed.json", type(of: self))!,
-                    statusCode: 200,
-                    headers: ["Content-Type":"application/json"]
-                )
-            })
-            stub(condition: isHost("podcast-news-embed-episode-7.io"), response: { (request) -> OHHTTPStubsResponse in
-                return OHHTTPStubsResponse(
-                    fileAtPath: OHPathForFile("podcast_news_embed.episode_7.json", type(of: self))!,
-                    statusCode: 200,
-                    headers: ["Content-Type":"application/json"]
-                )
-            })
-            stub(condition: isHost("podcast-news-embed-empty-episode.io"), response: { (request) -> OHHTTPStubsResponse in
-                return OHHTTPStubsResponse(
-                    fileAtPath: OHPathForFile("podcast_news_embed.empty_episode.json", type(of: self))!,
-                    statusCode: 200,
-                    headers: ["Content-Type":"application/json"]
-                )
-            })
-            stub(condition: isHost("podcast-news-playlist.io"), response: { (request) -> OHHTTPStubsResponse in
-                return OHHTTPStubsResponse(
-                    fileAtPath: OHPathForFile("podcast_news_playlist.json", type(of: self))!,
-                    statusCode: 200,
-                    headers: ["Content-Type":"application/json"]
-                )
-            })
-        }
-        afterSuite {
-            OHHTTPStubs.removeAllStubs()
-        }
+        stub(condition: isHost("podcast-news-embed.io"), response: { (request) -> OHHTTPStubsResponse in
+            return OHHTTPStubsResponse(
+                fileAtPath: OHPathForFile("podcast_news_embed.json", type(of: self))!,
+                statusCode: 200,
+                headers: ["Content-Type":"application/json"]
+            )
+        })
+        stub(condition: isHost("podcast-news-embed-episode-7.io"), response: { (request) -> OHHTTPStubsResponse in
+            return OHHTTPStubsResponse(
+                fileAtPath: OHPathForFile("podcast_news_embed.episode_7.json", type(of: self))!,
+                statusCode: 200,
+                headers: ["Content-Type":"application/json"]
+            )
+        })
+        stub(condition: isHost("podcast-news-embed-empty-episode.io"), response: { (request) -> OHHTTPStubsResponse in
+            return OHHTTPStubsResponse(
+                fileAtPath: OHPathForFile("podcast_news_embed.empty_episode.json", type(of: self))!,
+                statusCode: 200,
+                headers: ["Content-Type":"application/json"]
+            )
+        })
+        stub(condition: isHost("podcast-news-playlist.io"), response: { (request) -> OHHTTPStubsResponse in
+            return OHHTTPStubsResponse(
+                fileAtPath: OHPathForFile("podcast_news_playlist.json", type(of: self))!,
+                statusCode: 200,
+                headers: ["Content-Type":"application/json"]
+            )
+        })
     }
 
 }

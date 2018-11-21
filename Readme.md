@@ -11,6 +11,7 @@ The `PodigeeEmbedKit` framework allows you to display information about a podcas
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
+- [iOS Demo Project](https://github.com/podigee/PodigeeEmbedKitDemo)
 - [License](#license)
 
 ## Requirements

@@ -185,10 +185,6 @@ Episodes can either be sorted by publish date or by episode number. If you do no
   })
 ```
 
-## Contributing
-
-Issues and pull requests are welcome!
-
 ## Author
 
 Podigee [@podigee](https://twitter.com/podigee)

@@ -66,7 +66,7 @@ $ brew install carthage
 To integrate PodigeeEmbedKit into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "podigee/PodigeeEmbedKit" ~> 0.0.1
+github "podigee/PodigeeEmbedKit" ~> 1.0.0
 ```
 
 </details>
@@ -84,7 +84,7 @@ import PackageDescription
 let package = Package(
     name: "HelloPodigeeEmbedKit",
     dependencies: [
-        .package(url: "https://github.com/podigee/PodigeeEmbedKit.git", .upToNextMajor(from: "0.0.1"))
+        .package(url: "https://github.com/podigee/PodigeeEmbedKit.git", .upToNextMajor(from: "1.0.0"))
     ],
     targets: [
         .target(name: "HelloPodigeeEmbedKit", dependencies: ["PodigeeEmbedKit"])

@@ -11,7 +11,8 @@ The `PodigeeEmbedKit` framework allows you to display information about a podcas
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
-- [iOS Demo Project](https://github.com/podigee/PodigeeEmbedKitDemo)
+- [Full Documentation](#documentation)
+- [iOS Demo Project](#demo)
 - [License](#license)
 
 ## Requirements
@@ -128,7 +129,7 @@ public struct PodcastEmbed: Codable {
 
 Extensions include several boolean toggles which can be defined in the Podigee webinterface for external player embeds. Using these settings you can define if the player should show a download button, or the chapter marks for example. It is up to you to use these toggles to actually have an effect on your UI.
 
-Please [take a look at the full API documentation]() for more information.
+Please [take a look at the full API documentation](#documentation) for more information.
 
 ### Request embed data for specific episode
 
@@ -182,6 +183,17 @@ Episodes can either be sorted by publish date or by episode number. If you do no
       let episodes = playlist.episodes
   })
 ```
+
+## Documentation
+
+You can find the full API documentation in the `docs` folder:
+
+* Download and extract the repository contents
+* Open `docs/index.html`
+
+# Demo
+
+There also is a simple iOS demo project to demonstrate how this framework can be used to display podcast and episode content in an iOS app. [You can find the repository of the demo project here](https://github.com/podigee/PodigeeEmbedKitDemo).
 
 ## Author
 

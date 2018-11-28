@@ -51,217 +51,196 @@
     },
     {
       "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 71,
-      "symbol": "Episode.Media.aac",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 72,
-      "symbol": "Episode.Media.vorbis",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 73,
-      "symbol": "Episode.Media.opus",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 77,
+      "line": 74,
       "symbol": "Podcast",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 91,
+      "line": 88,
       "symbol": "Podcast.Connections",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 92,
+      "line": 89,
       "symbol": "Podcast.Connections.itunes",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 93,
+      "line": 90,
       "symbol": "Podcast.Connections.spotify",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 94,
+      "line": 91,
       "symbol": "Podcast.Connections.deezer",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 95,
+      "line": 92,
       "symbol": "Podcast.Connections.alexa",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 100,
+      "line": 97,
       "symbol": "Extensions",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 101,
+      "line": 98,
       "symbol": "Extensions.chapterMarks",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 102,
+      "line": 99,
       "symbol": "Extensions.download",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 103,
+      "line": 100,
       "symbol": "Extensions.episodeInfo",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 104,
+      "line": 101,
       "symbol": "Extensions.playlist",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 105,
+      "line": 102,
       "symbol": "Extensions.share",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 106,
+      "line": 103,
       "symbol": "Extensions.transcript",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 107,
+      "line": 104,
       "symbol": "Extensions.subscribeBar",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 119,
+      "line": 116,
       "symbol": "Extensions.SubscribeBar",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 120,
+      "line": 117,
       "symbol": "Extensions.SubscribeBar.disabled",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 122,
+      "line": 119,
       "symbol": "Extensions.Transcript",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 123,
+      "line": 120,
       "symbol": "Extensions.Transcript.disabled",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 125,
+      "line": 122,
       "symbol": "Extensions.Share",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 126,
+      "line": 123,
       "symbol": "Extensions.Share.disabled",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 128,
+      "line": 125,
       "symbol": "Extensions.Playlist",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 129,
+      "line": 126,
       "symbol": "Extensions.Playlist.disabled",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 131,
+      "line": 128,
       "symbol": "Extensions.EpisodeInfo",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 132,
+      "line": 129,
       "symbol": "Extensions.EpisodeInfo.disabled",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 134,
+      "line": 131,
       "symbol": "Extensions.Download",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 135,
+      "line": 132,
       "symbol": "Extensions.Download.disabled",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 137,
+      "line": 134,
       "symbol": "Extensions.ChapterMarks",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
-      "line": 138,
+      "line": 135,
       "symbol": "Extensions.ChapterMarks.disabled",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"

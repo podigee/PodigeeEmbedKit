@@ -3,6 +3,13 @@
     {
       "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
       "line": null,
+      "symbol": "Episode",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stefan/Projects/PodigeeEmbedKit/Sources/Core/Model.swift",
+      "line": null,
       "symbol": "PodcastEmbed",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"

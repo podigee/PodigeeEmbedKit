@@ -94,6 +94,13 @@ class PodigeeEmbedKitSpec: QuickSpec {
                     expect(url).toEventually(equal(URL(string: "https://podcast-news.podigee.io/6-return-of-the-chaos-monkey")!))
                     expect(transcript).toEventually(equal(URL(string: "https://podcast-news.podigee.io/6-return-of-the-chaos-monkey/transcript.json")!))
                 }
+                it("returns correctly scaled coverart urls") {
+                    var coverUrl: URL?
+                    PodigeeEmbedKit.embedDataForPodcastWith(domain: "podcast-news-embed.io") { (podcastEmbed, error) in
+                        coverUrl = podcastEmbed?.episode?.coverartUrlFor(width: 720)
+                    }
+                    expect(coverUrl).toEventually(equal(URL(string: "https://images.podigee.com/720x,sabagK4V_yGDanwc5brVBURwuLdbKAb5BQ1rx5zQcd9o=/https://cdn.podigee.com/uploads/u1/72b01048-d910-4809-8e97-3b25bb4561b1.png")!))
+                }
                 context("specific episode path is set") {
                     it("returns the correct episode") {
                         var title: String?

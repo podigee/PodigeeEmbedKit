@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PodigeeEmbedKit  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="PodigeeEmbedKit  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">PodigeeEmbedKit Docs</a> (41% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">PodigeeEmbedKit Reference</a>
+        <img id="carat" src="img/carat.png" />
+        PodigeeEmbedKit  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/PodigeeEmbedKit.html">PodigeeEmbedKit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PodigeeEmbedKit/PodigeeError.html">– PodigeeError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PodigeeEmbedKit/PlaylistSorting.html">– PlaylistSorting</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/Episode.html">Episode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Episode/Chaptermark.html">– Chaptermark</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Episode/Media.html">– Media</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Extensions.html">Extensions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Extensions/SubscribeBar.html">– SubscribeBar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Extensions/Transcript.html">– Transcript</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Extensions/Share.html">– Share</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Extensions/Playlist.html">– Playlist</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Extensions/EpisodeInfo.html">– EpisodeInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Extensions/Download.html">– Download</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Extensions/ChapterMarks.html">– ChapterMarks</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs.html#/s:15PodigeeEmbedKit8PlaylistV">Playlist</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Podcast.html">Podcast</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Podcast/Connections.html">– Connections</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PodcastEmbed.html">PodcastEmbed</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:15PodigeeEmbedKit8Episodesa">Episodes</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='podigeeembedkit' class='heading'>PodigeeEmbedKit</h1>
+
+<p><a href="#"><img src="https://img.shields.io/badge/platform-ios%20%7C%20macOS%20%7C%20watchOS%20%7C%20tvOS-lightgrey.svg" alt="Platforms"></a></p>
+
+<p><a href="https://github.com/apple/swift-package-manager"><img src="https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg" alt="Swift Package Manager"></a>
+<a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible"></a>
+<a href="https://cocoapods.org"><img src="https://img.shields.io/badge/Cocoapods-compatible-brightgreen.svg" alt="CocoaPods compatible"></a></p>
+
+<p>The <code><a href="Classes/PodigeeEmbedKit.html">PodigeeEmbedKit</a></code> framework allows you to display information about a podcast hosted on <a href="https://podigee.com">podigee.com</a> in your iOS, macOS or tvOS app. You can get data for the most recent published episode, a specific episode and even a playlist of all published episodes.</p>
+
+<ul>
+<li><a href="#requirements">Requirements</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#documentation">Full Documentation</a></li>
+<li><a href="#demo">iOS Demo Project</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2 id='requirements' class='heading'>Requirements</h2>
+
+<ul>
+<li>iOS 10.0+ / Mac OS X 10.10+ / tvOS 10.0+ / watchOS 3.0+</li>
+<li>Xcode 10.0+</li>
+</ul>
+<h2 id='installation' class='heading'>Installation</h2>
+<h3 id='dependency-managers' class='heading'>Dependency Managers</h3>
+
+<details>
+  <summary><strong>CocoaPods</strong></summary>
+
+[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
+
+&ldquo;`bash
+$ gem install cocoapods
+&rdquo;`
+
+To integrate PodigeeEmbedKit into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+&ldquo;`ruby
+platform :ios, &lsquo;10.0&rsquo;
+use_frameworks!
+
+pod &lsquo;PodigeeEmbedKit&rsquo;, :git => &lsquo;https://github.com/podigee/PodigeeEmbedKit.git&rsquo;, :branch => &lsquo;master&rsquo;
+&rdquo;`
+
+You have to link to the Github repository directly, because it is not publically available in the Cocoapods directory.
+
+Then, run the following command:
+
+&ldquo;`bash
+$ pod install
+&rdquo;`
+
+</details>
+
+<details>
+  <summary><strong>Carthage</strong></summary>
+
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that automates the process of adding frameworks to your Cocoa application.
+
+You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
+
+&ldquo;`bash
+$ brew update
+$ brew install carthage
+&rdquo;`
+
+To integrate PodigeeEmbedKit into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+&ldquo;`ogdl
+github &quot;podigee/PodigeeEmbedKit&rdquo; ~> 1.0.0
+&ldquo;`
+
+</details>
+
+<details>
+  <summary><strong>Swift Package Manager</strong></summary>
+
+To use PodigeeEmbedKit as a [Swift Package Manager](https://swift.org/package-manager/) package just add the following in your Package.swift file.
+
+&rdquo;` swift
+// swift-tools-version:4.2
+
+import PackageDescription
+
+let package = Package(
+    name: &ldquo;HelloPodigeeEmbedKit&rdquo;,
+    dependencies: [
+        .package(url: &ldquo;https://github.com/podigee/PodigeeEmbedKit.git&rdquo;, .upToNextMajor(from: &ldquo;1.0.0&rdquo;))
+    ],
+    targets: [
+        .target(name: &ldquo;HelloPodigeeEmbedKit&rdquo;, dependencies: [&ldquo;PodigeeEmbedKit&rdquo;])
+    ]
+)
+&ldquo;`
+</details>
+<h2 id='usage' class='heading'>Usage</h2>
+
+<p>When you request data you always have to provide the domain of the podcast hosted on Podigee. The domain format is <code>podcast-specific-subdomain.podigee.io</code>, e.g. <code>podcast-news.podigee.io</code>.</p>
+<h3 id='request-embed-data-for-the-most-recent-episode' class='heading'>Request embed data for the most recent episode</h3>
+
+<p>Requesting embed data returns</p>
+
+<ul>
+<li>Podcast Metadata</li>
+<li>Episode Metadata</li>
+<li>Extension settings</li>
+</ul>
+
+<p>If you do not define a specific episode this will return metadata for the most recently published episode of this podcast.</p>
+<pre class="highlight swift"><code>  <span class="k">let</span> <span class="nv">podcastDomain</span> <span class="o">=</span> <span class="s">"podcast-news.podigee.io"</span>
+  <span class="kt">PodigeeEmbedKit</span><span class="o">.</span><span class="nf">embedDataForPodcastWith</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="n">podcastDomain</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="n">podcastEmbed</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+      <span class="k">let</span> <span class="nv">podcastTitle</span> <span class="o">=</span> <span class="n">podcastEmbed</span><span class="p">?</span><span class="o">.</span><span class="n">podcast</span><span class="o">.</span><span class="n">title</span>
+      <span class="k">let</span> <span class="nv">episode</span> <span class="o">=</span> <span class="n">podcastEmbed</span><span class="p">?</span><span class="o">.</span><span class="n">episode</span>
+      <span class="k">let</span> <span class="nv">episodeTitle</span> <span class="o">=</span> <span class="n">episode</span><span class="p">?</span><span class="o">.</span><span class="n">title</span>
+      <span class="k">let</span> <span class="nv">mp3Url</span> <span class="o">=</span> <span class="n">episode</span><span class="p">?</span><span class="o">.</span><span class="n">media</span><span class="o">.</span><span class="n">mp3</span>
+  <span class="p">}</span>
+</code></pre>
+
+<p>The <code>podcastEmbed</code> struct which is returned is defined like this:</p>
+<pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PodcastEmbed</span><span class="p">:</span> <span class="kt">Codable</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="k">let</span> <span class="nv">episode</span><span class="p">:</span> <span class="kt">Episode</span><span class="p">?</span>
+    <span class="kd">public</span> <span class="k">let</span> <span class="nv">podcast</span><span class="p">:</span> <span class="kt">Podcast</span>
+    <span class="kd">public</span> <span class="k">let</span> <span class="nv">extensions</span><span class="p">:</span> <span class="kt">Extensions</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>Extensions include several boolean toggles which can be defined in the Podigee webinterface for external player embeds. Using these settings you can define if the player should show a download button, or the chapter marks for example. It is up to you to use these toggles to actually have an effect on your UI.</p>
+
+<p>Please <a href="#documentation">take a look at the full API documentation</a> for more information.</p>
+
+<p><strong>Handling coverart images</strong></p>
+
+<p>When you want to display a coverart image you can request a specific image size from the API. All coverart images are squares so you only define a custom width.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">episode</span> <span class="o">=</span> <span class="n">podcastEmbed</span><span class="p">?</span><span class="o">.</span><span class="n">episode</span>
+<span class="k">let</span> <span class="nv">url</span> <span class="o">=</span> <span class="n">episode</span><span class="o">.</span><span class="nf">coverartUrlFor</span><span class="p">(</span><span class="nv">width</span><span class="p">:</span> <span class="mi">720</span><span class="p">)</span>
+</code></pre>
+<h3 id='request-embed-data-for-specific-episode' class='heading'>Request embed data for specific episode</h3>
+
+<p>You can also request embed information for a specific episode of a podcast. In this case you have to provide the <code>episodePath</code> in addidation to the podcast domain. In this case the path to the episode is <code>7-podcatcher-in-the-rye</code>.</p>
+<pre class="highlight swift"><code>  <span class="kt">PodigeeEmbedKit</span><span class="o">.</span><span class="nf">embedDataForPodcastWith</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="s">"podcast-news.podigee.io"</span><span class="p">,</span> <span class="nv">episodePath</span><span class="p">:</span> <span class="s">"7-podcatcher-in-the-rye"</span><span class="p">,</span> <span class="nv">complete</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">podcastEmbed</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+      <span class="k">let</span> <span class="nv">title</span> <span class="o">=</span> <span class="n">podcastEmbed</span><span class="p">?</span><span class="o">.</span><span class="n">episode</span><span class="p">?</span><span class="o">.</span><span class="n">title</span>
+      <span class="k">let</span> <span class="nv">subtitle</span> <span class="o">=</span> <span class="n">podcastEmbed</span><span class="p">?</span><span class="o">.</span><span class="n">episode</span><span class="p">?</span><span class="o">.</span><span class="n">subtitle</span>
+      <span class="k">let</span> <span class="nv">number</span> <span class="o">=</span> <span class="n">podcastEmbed</span><span class="p">?</span><span class="o">.</span><span class="n">episode</span><span class="p">?</span><span class="o">.</span><span class="n">number</span>
+  <span class="p">})</span>
+</code></pre>
+<h3 id='request-a-list-of-published-episodes' class='heading'>Request a list of published episodes</h3>
+
+<p>You can also request a list of published episodes. By default this returns the last 10 episodes of the podcast sorted by publish date.</p>
+<pre class="highlight swift"><code>  <span class="kt">PodigeeEmbedKit</span><span class="o">.</span><span class="nf">playlistForPodcastWith</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="s">"podcast-news.podigee.io"</span><span class="p">,</span> <span class="nv">complete</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">playlist</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+      <span class="k">let</span> <span class="nv">episodes</span> <span class="o">=</span> <span class="n">playlist</span><span class="o">.</span><span class="n">episodes</span>
+      <span class="k">for</span> <span class="n">episode</span> <span class="k">in</span> <span class="n">episodes</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="n">episode</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
+      <span class="p">}</span>
+  <span class="p">})</span>
+</code></pre>
+
+<p><strong>Paging</strong></p>
+
+<p>If you need more episodes you can use the paging parameters <code>pageSize</code> and <code>offset</code> to request episodes using multiple requests.</p>
+<pre class="highlight swift"><code>  <span class="c1">// fetch first 5 episodes</span>
+  <span class="kt">PodigeeEmbedKit</span><span class="o">.</span><span class="nf">playlistForPodcastWith</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="s">"podcast-news.podigee.io"</span><span class="p">,</span> <span class="nv">pageSize</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">complete</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">playlist</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+      <span class="k">let</span> <span class="nv">episodes</span> <span class="o">=</span> <span class="n">playlist</span><span class="o">.</span><span class="n">episodes</span>
+  <span class="p">})</span>
+
+  <span class="c1">// fetch next 5 episodes</span>
+  <span class="kt">PodigeeEmbedKit</span><span class="o">.</span><span class="nf">playlistForPodcastWith</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="s">"podcast-news.podigee.io"</span><span class="p">,</span> <span class="nv">pageSize</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="nv">complete</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">playlist</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+    <span class="k">let</span> <span class="nv">episodes</span> <span class="o">=</span> <span class="n">playlist</span><span class="o">.</span><span class="n">episodes</span>
+  <span class="p">})</span>
+</code></pre>
+
+<p>The returned episodes count only matches the requested <code>pagesSize</code> if the podcast does have enough published episodes.</p>
+
+<p><strong>Sorting</strong></p>
+
+<p>Episodes can either be sorted by publish date or by episode number. If you do not set the sorting algorithm yourself the episodes are sorted by publish date by default.</p>
+<pre class="highlight swift"><code>  <span class="kt">PodigeeEmbedKit</span><span class="o">.</span><span class="nf">playlistForPodcastWith</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="s">"podcast-news.podigee.io"</span><span class="p">,</span> <span class="nv">sortBy</span><span class="p">:</span> <span class="o">.</span><span class="n">episodeNumber</span><span class="p">,</span> <span class="nv">complete</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">playlist</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+      <span class="k">let</span> <span class="nv">episodes</span> <span class="o">=</span> <span class="n">playlist</span><span class="o">.</span><span class="n">episodes</span>
+  <span class="p">})</span>
+</code></pre>
+<h2 id='documentation' class='heading'>Documentation</h2>
+
+<p>You can find the full API documentation in the <code>docs</code> folder:</p>
+
+<ul>
+<li>Download and extract the repository contents</li>
+<li>Open <code>docs/index.html</code></li>
+</ul>
+<h1 id='demo' class='heading'>Demo</h1>
+
+<p>There also is a simple iOS demo project to demonstrate how this framework can be used to display podcast and episode content in an iOS app. <a href="https://github.com/podigee/PodigeeEmbedKitDemo">You can find the repository of the demo project here</a>.</p>
+<h2 id='author' class='heading'>Author</h2>
+
+<p>Podigee <a href="https://twitter.com/podigee">@podigee</a></p>
+<h2 id='license' class='heading'>License</h2>
+
+<p>PodigeeEmbedKit is released under the MIT license. See <a href="https://github.com/podigee/PodigeeEmbedKit/blob/master/LICENSE">LICENSE</a> for details.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://podigee.com" target="_blank" rel="external">Podigee</a>. All rights reserved. (Last updated: 2018-12-12)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

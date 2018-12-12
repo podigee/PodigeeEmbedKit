@@ -15,7 +15,7 @@ Please read it before you start participating.
 
 We don't use GitHub as a support forum.
 For any usage questions that are not specific to the project itself,
-please ask on [Stack Overflow](https://stackoverflow.com) instead.
+please ask via mail to <hello@podigee.com> instead.
 By doing so, you'll be more likely to quickly solve your problem,
 and you'll allow anyone else with the same question to find the answer.
 This also allows maintainers to focus on improving the project for others.

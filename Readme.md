@@ -1,3 +1,4 @@
+
 # PodigeeEmbedKit
 
 [![Platforms](https://img.shields.io/badge/platform-ios%20%7C%20macOS%20%7C%20watchOS%20%7C%20tvOS-lightgrey.svg)](#)
@@ -130,6 +131,15 @@ public struct PodcastEmbed: Codable {
 Extensions include several boolean toggles which can be defined in the Podigee webinterface for external player embeds. Using these settings you can define if the player should show a download button, or the chapter marks for example. It is up to you to use these toggles to actually have an effect on your UI.
 
 Please [take a look at the full API documentation](#documentation) for more information.
+
+**Handling coverart images**
+
+When you want to display a coverart image you can request a specific image size from the API. All coverart images are squares so you only define a custom width.
+
+```swift
+let episode = podcastEmbed?.episode
+let url = episode.coverartUrlFor(width: 720)
+```
 
 ### Request embed data for specific episode
 

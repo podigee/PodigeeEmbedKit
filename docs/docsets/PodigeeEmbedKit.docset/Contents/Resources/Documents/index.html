@@ -13,7 +13,7 @@
     <a title="PodigeeEmbedKit  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">PodigeeEmbedKit Docs</a> (41% documented)</p>
+        <p><a href="index.html">PodigeeEmbedKit Docs</a> (40% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -126,7 +126,7 @@
 
 <ul>
 <li>iOS 10.0+ / Mac OS X 10.10+ / tvOS 10.0+ / watchOS 3.0+</li>
-<li>Xcode 10.0+</li>
+<li>Swift 5.0+ / Xcode 10.2+</li>
 </ul>
 <h2 id='installation' class='heading'>Installation</h2>
 <h3 id='dependency-managers' class='heading'>Dependency Managers</h3>
@@ -174,7 +174,7 @@ $ brew install carthage
 To integrate PodigeeEmbedKit into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 &ldquo;`ogdl
-github &quot;podigee/PodigeeEmbedKit&rdquo; ~> 1.0.0
+github &quot;podigee/PodigeeEmbedKit&rdquo; ~> 1.1.0
 &ldquo;`
 
 </details>
@@ -192,7 +192,7 @@ import PackageDescription
 let package = Package(
     name: &ldquo;HelloPodigeeEmbedKit&rdquo;,
     dependencies: [
-        .package(url: &ldquo;https://github.com/podigee/PodigeeEmbedKit.git&rdquo;, .upToNextMajor(from: &ldquo;1.0.0&rdquo;))
+        .package(url: &ldquo;https://github.com/podigee/PodigeeEmbedKit.git&rdquo;, .upToNextMajor(from: &ldquo;1.1.0&rdquo;))
     ],
     targets: [
         .target(name: &ldquo;HelloPodigeeEmbedKit&rdquo;, dependencies: [&ldquo;PodigeeEmbedKit&rdquo;])
@@ -214,13 +214,17 @@ let package = Package(
 </ul>
 
 <p>If you do not define a specific episode this will return metadata for the most recently published episode of this podcast.</p>
-<pre class="highlight swift"><code>  <span class="k">let</span> <span class="nv">podcastDomain</span> <span class="o">=</span> <span class="s">"podcast-news.podigee.io"</span>
-  <span class="kt">PodigeeEmbedKit</span><span class="o">.</span><span class="nf">embedDataForPodcastWith</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="n">podcastDomain</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="n">podcastEmbed</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
-      <span class="k">let</span> <span class="nv">podcastTitle</span> <span class="o">=</span> <span class="n">podcastEmbed</span><span class="p">?</span><span class="o">.</span><span class="n">podcast</span><span class="o">.</span><span class="n">title</span>
-      <span class="k">let</span> <span class="nv">episode</span> <span class="o">=</span> <span class="n">podcastEmbed</span><span class="p">?</span><span class="o">.</span><span class="n">episode</span>
-      <span class="k">let</span> <span class="nv">episodeTitle</span> <span class="o">=</span> <span class="n">episode</span><span class="p">?</span><span class="o">.</span><span class="n">title</span>
-      <span class="k">let</span> <span class="nv">mp3Url</span> <span class="o">=</span> <span class="n">episode</span><span class="p">?</span><span class="o">.</span><span class="n">media</span><span class="o">.</span><span class="n">mp3</span>
-  <span class="p">}</span>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">podcastDomain</span> <span class="o">=</span> <span class="s">"podcast-news.podigee.io"</span>
+<span class="kt">PodigeeEmbedKit</span><span class="o">.</span><span class="nf">embedDataForPodcastWith</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="n">podcastDomain</span><span class="p">)</span> <span class="p">{</span> <span class="n">result</span> <span class="k">in</span>
+    <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span> <span class="k">break</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="k">let</span> <span class="nv">podcastEmbed</span><span class="p">):</span>
+        <span class="k">let</span> <span class="nv">podcastTitle</span> <span class="o">=</span> <span class="n">podcastEmbed</span><span class="o">.</span><span class="n">podcast</span><span class="o">.</span><span class="n">title</span>
+        <span class="k">let</span> <span class="nv">episode</span> <span class="o">=</span> <span class="n">podcastEmbed</span><span class="o">.</span><span class="n">episode</span>
+        <span class="k">let</span> <span class="nv">episodeTitle</span> <span class="o">=</span> <span class="n">episode</span><span class="o">.</span><span class="n">title</span>
+        <span class="k">let</span> <span class="nv">mp3Url</span> <span class="o">=</span> <span class="n">episode</span><span class="o">.</span><span class="n">media</span><span class="o">.</span><span class="n">mp3</span>        
+    <span class="p">}</span>
+<span class="p">}</span>
 </code></pre>
 
 <p>The <code>podcastEmbed</code> struct which is returned is defined like this:</p>
@@ -244,35 +248,45 @@ let package = Package(
 <h3 id='request-embed-data-for-specific-episode' class='heading'>Request embed data for specific episode</h3>
 
 <p>You can also request embed information for a specific episode of a podcast. In this case you have to provide the <code>episodePath</code> in addidation to the podcast domain. In this case the path to the episode is <code>7-podcatcher-in-the-rye</code>.</p>
-<pre class="highlight swift"><code>  <span class="kt">PodigeeEmbedKit</span><span class="o">.</span><span class="nf">embedDataForPodcastWith</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="s">"podcast-news.podigee.io"</span><span class="p">,</span> <span class="nv">episodePath</span><span class="p">:</span> <span class="s">"7-podcatcher-in-the-rye"</span><span class="p">,</span> <span class="nv">complete</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">podcastEmbed</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
-      <span class="k">let</span> <span class="nv">title</span> <span class="o">=</span> <span class="n">podcastEmbed</span><span class="p">?</span><span class="o">.</span><span class="n">episode</span><span class="p">?</span><span class="o">.</span><span class="n">title</span>
-      <span class="k">let</span> <span class="nv">subtitle</span> <span class="o">=</span> <span class="n">podcastEmbed</span><span class="p">?</span><span class="o">.</span><span class="n">episode</span><span class="p">?</span><span class="o">.</span><span class="n">subtitle</span>
-      <span class="k">let</span> <span class="nv">number</span> <span class="o">=</span> <span class="n">podcastEmbed</span><span class="p">?</span><span class="o">.</span><span class="n">episode</span><span class="p">?</span><span class="o">.</span><span class="n">number</span>
-  <span class="p">})</span>
+<pre class="highlight swift"><code><span class="kt">PodigeeEmbedKit</span><span class="o">.</span><span class="nf">embedDataForPodcastWith</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="s">"podcast-news.podigee.io"</span><span class="p">,</span> <span class="nv">episodePath</span><span class="p">:</span> <span class="s">"7-podcatcher-in-the-rye"</span><span class="p">,</span> <span class="nv">complete</span><span class="p">:</span> <span class="p">{</span> <span class="n">result</span> <span class="k">in</span>
+    <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span> <span class="k">break</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="k">let</span> <span class="nv">podcastEmbed</span><span class="p">):</span>
+        <span class="k">let</span> <span class="nv">title</span> <span class="o">=</span> <span class="n">podcastEmbed</span><span class="p">?</span><span class="o">.</span><span class="n">episode</span><span class="p">?</span><span class="o">.</span><span class="n">title</span>
+        <span class="k">let</span> <span class="nv">subtitle</span> <span class="o">=</span> <span class="n">podcastEmbed</span><span class="p">?</span><span class="o">.</span><span class="n">episode</span><span class="p">?</span><span class="o">.</span><span class="n">subtitle</span>
+        <span class="k">let</span> <span class="nv">number</span> <span class="o">=</span> <span class="n">podcastEmbed</span><span class="p">?</span><span class="o">.</span><span class="n">episode</span><span class="p">?</span><span class="o">.</span><span class="n">number</span>
+    <span class="p">}</span>
+<span class="p">})</span>
 </code></pre>
 <h3 id='request-a-list-of-published-episodes' class='heading'>Request a list of published episodes</h3>
 
 <p>You can also request a list of published episodes. By default this returns the last 10 episodes of the podcast sorted by publish date.</p>
-<pre class="highlight swift"><code>  <span class="kt">PodigeeEmbedKit</span><span class="o">.</span><span class="nf">playlistForPodcastWith</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="s">"podcast-news.podigee.io"</span><span class="p">,</span> <span class="nv">complete</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">playlist</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
-      <span class="k">let</span> <span class="nv">episodes</span> <span class="o">=</span> <span class="n">playlist</span><span class="o">.</span><span class="n">episodes</span>
-      <span class="k">for</span> <span class="n">episode</span> <span class="k">in</span> <span class="n">episodes</span> <span class="p">{</span>
-        <span class="nf">print</span><span class="p">(</span><span class="n">episode</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
-      <span class="p">}</span>
-  <span class="p">})</span>
+<pre class="highlight swift"><code><span class="kt">PodigeeEmbedKit</span><span class="o">.</span><span class="nf">playlistForPodcastWith</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="s">"podcast-news.podigee.io"</span><span class="p">,</span> <span class="nv">complete</span><span class="p">:</span> <span class="p">{</span> <span class="n">result</span> <span class="k">in</span>
+    <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span> <span class="k">break</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="k">let</span> <span class="nv">playlist</span><span class="p">):</span>
+        <span class="k">let</span> <span class="nv">episodes</span> <span class="o">=</span> <span class="n">playlist</span><span class="o">.</span><span class="n">episodes</span>
+        <span class="k">for</span> <span class="n">episode</span> <span class="k">in</span> <span class="n">episodes</span> <span class="p">{</span>
+            <span class="nf">print</span><span class="p">(</span><span class="n">episode</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
+        <span class="p">}</span>         
+    <span class="p">}</span>
+<span class="p">})</span>
 </code></pre>
 
 <p><strong>Paging</strong></p>
 
 <p>If you need more episodes you can use the paging parameters <code>pageSize</code> and <code>offset</code> to request episodes using multiple requests.</p>
-<pre class="highlight swift"><code>  <span class="c1">// fetch first 5 episodes</span>
-  <span class="kt">PodigeeEmbedKit</span><span class="o">.</span><span class="nf">playlistForPodcastWith</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="s">"podcast-news.podigee.io"</span><span class="p">,</span> <span class="nv">pageSize</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">complete</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">playlist</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
-      <span class="k">let</span> <span class="nv">episodes</span> <span class="o">=</span> <span class="n">playlist</span><span class="o">.</span><span class="n">episodes</span>
-  <span class="p">})</span>
+<pre class="highlight swift"><code><span class="c1">// fetch first 5 episodes</span>
+<span class="kt">PodigeeEmbedKit</span><span class="o">.</span><span class="nf">playlistForPodcastWith</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="s">"podcast-news.podigee.io"</span><span class="p">,</span> <span class="nv">pageSize</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">complete</span><span class="p">:</span> <span class="p">{</span> <span class="n">result</span> <span class="k">in</span>
+    <span class="k">let</span> <span class="nv">playlist</span> <span class="o">=</span> <span class="k">try</span><span class="p">?</span> <span class="n">result</span><span class="o">.</span><span class="nf">get</span><span class="p">()</span>
+    <span class="k">let</span> <span class="nv">episodes</span> <span class="o">=</span> <span class="n">playlist</span><span class="p">?</span><span class="o">.</span><span class="n">episodes</span>
+<span class="p">})</span>
 
-  <span class="c1">// fetch next 5 episodes</span>
-  <span class="kt">PodigeeEmbedKit</span><span class="o">.</span><span class="nf">playlistForPodcastWith</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="s">"podcast-news.podigee.io"</span><span class="p">,</span> <span class="nv">pageSize</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="nv">complete</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">playlist</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
-    <span class="k">let</span> <span class="nv">episodes</span> <span class="o">=</span> <span class="n">playlist</span><span class="o">.</span><span class="n">episodes</span>
-  <span class="p">})</span>
+<span class="c1">// fetch next 5 episodes</span>
+<span class="kt">PodigeeEmbedKit</span><span class="o">.</span><span class="nf">playlistForPodcastWith</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="s">"podcast-news.podigee.io"</span><span class="p">,</span> <span class="nv">pageSize</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="nv">complete</span><span class="p">:</span> <span class="p">{</span> <span class="n">result</span> <span class="k">in</span>
+    <span class="k">let</span> <span class="nv">playlist</span> <span class="o">=</span> <span class="k">try</span><span class="p">?</span> <span class="n">result</span><span class="o">.</span><span class="nf">get</span><span class="p">()</span>
+    <span class="k">let</span> <span class="nv">episodes</span> <span class="o">=</span> <span class="n">playlist</span><span class="p">?</span><span class="o">.</span><span class="n">episodes</span>
+<span class="p">})</span>
 </code></pre>
 
 <p>The returned episodes count only matches the requested <code>pagesSize</code> if the podcast does have enough published episodes.</p>
@@ -280,9 +294,10 @@ let package = Package(
 <p><strong>Sorting</strong></p>
 
 <p>Episodes can either be sorted by publish date or by episode number. If you do not set the sorting algorithm yourself the episodes are sorted by publish date by default.</p>
-<pre class="highlight swift"><code>  <span class="kt">PodigeeEmbedKit</span><span class="o">.</span><span class="nf">playlistForPodcastWith</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="s">"podcast-news.podigee.io"</span><span class="p">,</span> <span class="nv">sortBy</span><span class="p">:</span> <span class="o">.</span><span class="n">episodeNumber</span><span class="p">,</span> <span class="nv">complete</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">playlist</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
-      <span class="k">let</span> <span class="nv">episodes</span> <span class="o">=</span> <span class="n">playlist</span><span class="o">.</span><span class="n">episodes</span>
-  <span class="p">})</span>
+<pre class="highlight swift"><code><span class="kt">PodigeeEmbedKit</span><span class="o">.</span><span class="nf">playlistForPodcastWith</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="s">"podcast-news.podigee.io"</span><span class="p">,</span> <span class="nv">sortBy</span><span class="p">:</span> <span class="o">.</span><span class="n">episodeNumber</span><span class="p">,</span> <span class="nv">complete</span><span class="p">:</span> <span class="p">{</span> <span class="n">result</span> <span class="k">in</span>
+    <span class="k">let</span> <span class="nv">playlist</span> <span class="o">=</span> <span class="k">try</span><span class="p">?</span> <span class="n">result</span><span class="o">.</span><span class="nf">get</span><span class="p">()</span>
+    <span class="k">let</span> <span class="nv">episodes</span> <span class="o">=</span> <span class="n">playlist</span><span class="p">?</span><span class="o">.</span><span class="n">episodes</span>
+<span class="p">})</span>
 </code></pre>
 <h2 id='documentation' class='heading'>Documentation</h2>
 
@@ -305,7 +320,7 @@ let package = Package(
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="https://podigee.com" target="_blank" rel="external">Podigee</a>. All rights reserved. (Last updated: 2018-12-12)</p>
+          <p>&copy; 2019 <a class="link" href="https://podigee.com" target="_blank" rel="external">Podigee</a>. All rights reserved. (Last updated: 2019-03-29)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

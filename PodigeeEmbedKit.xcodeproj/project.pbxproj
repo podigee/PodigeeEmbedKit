@@ -36,10 +36,18 @@
 		F847C9D9219F060D0048A975 /* podcast_news_embed.episode_7.json in Resources */ = {isa = PBXBuildFile; fileRef = F847C9D8219F060D0048A975 /* podcast_news_embed.episode_7.json */; };
 		F847C9DA219F060D0048A975 /* podcast_news_embed.episode_7.json in Resources */ = {isa = PBXBuildFile; fileRef = F847C9D8219F060D0048A975 /* podcast_news_embed.episode_7.json */; };
 		F847C9DB219F060D0048A975 /* podcast_news_embed.episode_7.json in Resources */ = {isa = PBXBuildFile; fileRef = F847C9D8219F060D0048A975 /* podcast_news_embed.episode_7.json */; };
-		F84A97BE2196E2ED00186BC2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84A97BD2196E2ED00186BC2 /* Model.swift */; };
-		F84F43E52199994C00C6C833 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84A97BD2196E2ED00186BC2 /* Model.swift */; };
-		F84F43E62199994D00C6C833 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84A97BD2196E2ED00186BC2 /* Model.swift */; };
-		F84F43E72199994E00C6C833 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84A97BD2196E2ED00186BC2 /* Model.swift */; };
+		F86E9E462243D68A0057FAAF /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E9E452243D68A0057FAAF /* Episode.swift */; };
+		F86E9E472243D68A0057FAAF /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E9E452243D68A0057FAAF /* Episode.swift */; };
+		F86E9E482243D68A0057FAAF /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E9E452243D68A0057FAAF /* Episode.swift */; };
+		F86E9E492243D68A0057FAAF /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E9E452243D68A0057FAAF /* Episode.swift */; };
+		F86E9E4B2243D6AE0057FAAF /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E9E4A2243D6AE0057FAAF /* Podcast.swift */; };
+		F86E9E4C2243D6AE0057FAAF /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E9E4A2243D6AE0057FAAF /* Podcast.swift */; };
+		F86E9E4D2243D6AE0057FAAF /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E9E4A2243D6AE0057FAAF /* Podcast.swift */; };
+		F86E9E4E2243D6AE0057FAAF /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E9E4A2243D6AE0057FAAF /* Podcast.swift */; };
+		F86E9E502243D6C60057FAAF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E9E4F2243D6C60057FAAF /* Extensions.swift */; };
+		F86E9E512243D6C60057FAAF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E9E4F2243D6C60057FAAF /* Extensions.swift */; };
+		F86E9E522243D6C60057FAAF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E9E4F2243D6C60057FAAF /* Extensions.swift */; };
+		F86E9E532243D6C60057FAAF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E9E4F2243D6C60057FAAF /* Extensions.swift */; };
 		F8D6A75D219D777800535EE5 /* podcast_news_embed.json in Resources */ = {isa = PBXBuildFile; fileRef = F8D6A75C219D777800535EE5 /* podcast_news_embed.json */; };
 		F8D6A75E219D777800535EE5 /* podcast_news_embed.json in Resources */ = {isa = PBXBuildFile; fileRef = F8D6A75C219D777800535EE5 /* podcast_news_embed.json */; };
 		F8D6A75F219D777800535EE5 /* podcast_news_embed.json in Resources */ = {isa = PBXBuildFile; fileRef = F8D6A75C219D777800535EE5 /* podcast_news_embed.json */; };
@@ -55,6 +63,10 @@
 		F8D6A77A219DA66D00535EE5 /* podcast_news_embed.empty_episode.json in Resources */ = {isa = PBXBuildFile; fileRef = F8D6A779219DA66D00535EE5 /* podcast_news_embed.empty_episode.json */; };
 		F8D6A77B219DA66D00535EE5 /* podcast_news_embed.empty_episode.json in Resources */ = {isa = PBXBuildFile; fileRef = F8D6A779219DA66D00535EE5 /* podcast_news_embed.empty_episode.json */; };
 		F8D6A77C219DA66D00535EE5 /* podcast_news_embed.empty_episode.json in Resources */ = {isa = PBXBuildFile; fileRef = F8D6A779219DA66D00535EE5 /* podcast_news_embed.empty_episode.json */; };
+		F8FC97642243D5A800D4E772 /* PodcastEmbed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FC97632243D5A800D4E772 /* PodcastEmbed.swift */; };
+		F8FC97652243D5B200D4E772 /* PodcastEmbed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FC97632243D5A800D4E772 /* PodcastEmbed.swift */; };
+		F8FC97662243D5B200D4E772 /* PodcastEmbed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FC97632243D5A800D4E772 /* PodcastEmbed.swift */; };
+		F8FC97672243D5B300D4E772 /* PodcastEmbed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FC97632243D5A800D4E772 /* PodcastEmbed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,13 +157,16 @@
 		35B742341F82A61D00829B21 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
 		35B742351F82A61E00829B21 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
 		F847C9D8219F060D0048A975 /* podcast_news_embed.episode_7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = podcast_news_embed.episode_7.json; sourceTree = "<group>"; };
-		F84A97BD2196E2ED00186BC2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F86E9E452243D68A0057FAAF /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		F86E9E4A2243D6AE0057FAAF /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
+		F86E9E4F2243D6C60057FAAF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F8D6A75C219D777800535EE5 /* podcast_news_embed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = podcast_news_embed.json; sourceTree = "<group>"; };
 		F8D6A76B219D7A8400535EE5 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		F8D6A76E219D7B4400535EE5 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/Mac/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		F8D6A771219D7B6200535EE5 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/tvOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		F8D6A775219D7E2D00535EE5 /* podcast_news_playlist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = podcast_news_playlist.json; sourceTree = "<group>"; };
 		F8D6A779219DA66D00535EE5 /* podcast_news_embed.empty_episode.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = podcast_news_embed.empty_episode.json; sourceTree = "<group>"; };
+		F8FC97632243D5A800D4E772 /* PodcastEmbed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastEmbed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,9 +316,20 @@
 			isa = PBXGroup;
 			children = (
 				359649021FB18CBF00FC7ADC /* PodigeeEmbedKit.swift */,
-				F84A97BD2196E2ED00186BC2 /* Model.swift */,
+				F86E9E542243D6E10057FAAF /* Model */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		F86E9E542243D6E10057FAAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8FC97632243D5A800D4E772 /* PodcastEmbed.swift */,
+				F86E9E4A2243D6AE0057FAAF /* Podcast.swift */,
+				F86E9E452243D68A0057FAAF /* Episode.swift */,
+				F86E9E4F2243D6C60057FAAF /* Extensions.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F8D6A774219D7C2700535EE5 /* Network Stubs */ = {
@@ -491,7 +517,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = podigee;
 				TargetAttributes = {
 					3549BB201DA389CD00C63030 = {
@@ -533,10 +559,11 @@
 			};
 			buildConfigurationList = 3549BAFF1DA387DB00C63030 /* Build configuration list for PBXProject "PodigeeEmbedKit" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 3549BAFB1DA387DB00C63030;
 			productRefGroup = 3549BB061DA387DB00C63030 /* Products */;
@@ -623,8 +650,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8FC97642243D5A800D4E772 /* PodcastEmbed.swift in Sources */,
+				F86E9E502243D6C60057FAAF /* Extensions.swift in Sources */,
+				F86E9E462243D68A0057FAAF /* Episode.swift in Sources */,
 				359649031FB18CC000FC7ADC /* PodigeeEmbedKit.swift in Sources */,
-				F84A97BE2196E2ED00186BC2 /* Model.swift in Sources */,
+				F86E9E4B2243D6AE0057FAAF /* Podcast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,8 +662,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8FC97652243D5B200D4E772 /* PodcastEmbed.swift in Sources */,
+				F86E9E532243D6C60057FAAF /* Extensions.swift in Sources */,
+				F86E9E492243D68A0057FAAF /* Episode.swift in Sources */,
 				359649061FB18CC000FC7ADC /* PodigeeEmbedKit.swift in Sources */,
-				F84F43E72199994E00C6C833 /* Model.swift in Sources */,
+				F86E9E4E2243D6AE0057FAAF /* Podcast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,8 +674,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8FC97672243D5B300D4E772 /* PodcastEmbed.swift in Sources */,
+				F86E9E512243D6C60057FAAF /* Extensions.swift in Sources */,
+				F86E9E472243D68A0057FAAF /* Episode.swift in Sources */,
 				359649041FB18CC000FC7ADC /* PodigeeEmbedKit.swift in Sources */,
-				F84F43E52199994C00C6C833 /* Model.swift in Sources */,
+				F86E9E4C2243D6AE0057FAAF /* Podcast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,8 +686,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8FC97662243D5B200D4E772 /* PodcastEmbed.swift in Sources */,
+				F86E9E522243D6C60057FAAF /* Extensions.swift in Sources */,
+				F86E9E482243D68A0057FAAF /* Episode.swift in Sources */,
 				359649051FB18CC000FC7ADC /* PodigeeEmbedKit.swift in Sources */,
-				F84F43E62199994D00C6C833 /* Model.swift in Sources */,
+				F86E9E4D2243D6AE0057FAAF /* Podcast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,6 +743,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -757,7 +797,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -768,6 +808,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -813,7 +854,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -838,7 +879,7 @@
 				PRODUCT_NAME = PodigeeEmbedKit;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -858,7 +899,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.podigee.ios.embedKit.PodigeeEmbedKit;
 				PRODUCT_NAME = PodigeeEmbedKit;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -880,6 +921,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
@@ -902,6 +944,7 @@
 				PRODUCT_NAME = PodigeeEmbedKit;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
@@ -926,6 +969,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -947,6 +991,7 @@
 				PRODUCT_NAME = PodigeeEmbedKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -967,6 +1012,7 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
@@ -988,6 +1034,7 @@
 				PRODUCT_NAME = PodigeeEmbedKit;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
@@ -1007,7 +1054,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.podigee.ios.embedKit.PodigeeEmbedKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1024,7 +1071,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.podigee.ios.embedKit.PodigeeEmbedKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1043,6 +1090,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
@@ -1061,6 +1109,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.podigee.ios.embedKit.PodigeeEmbedKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
@@ -1082,6 +1131,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1101,6 +1151,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.podigee.ios.embedKit.PodigeeEmbedKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

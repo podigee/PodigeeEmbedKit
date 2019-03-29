@@ -19,7 +19,7 @@ The `PodigeeEmbedKit` framework allows you to display information about a podcas
 ## Requirements
 
 - iOS 10.0+ / Mac OS X 10.10+ / tvOS 10.0+ / watchOS 3.0+
-- Xcode 10.2+
+- Swift 5.0+ / Xcode 10.2+
 
 ## Installation
 

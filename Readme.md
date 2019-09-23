@@ -16,6 +16,12 @@ The `PodigeeEmbedKit` framework allows you to display information about a podcas
 - [iOS Demo Project](#demo)
 - [License](#license)
 
+## Word of Caution
+
+The PodigeeEmbedKit *MUST* only be used with a **Podigee Enterprise License**.
+
+If you're interested in sales, check out [Podigee for Professionals](https://www.podigee.com/en/professionals/)
+
 ## Requirements
 
 - iOS 10.0+ / Mac OS X 10.10+ / tvOS 10.0+ / watchOS 3.0+
